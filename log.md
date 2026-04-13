@@ -5,6 +5,20 @@
 
 ---
 
+## [2026-04-13] ingest | CORE 2 Вопросы технических собеседований.pdf
+
+Источник: методичка Kata-курсов, CORE 2 — Generics, Collections, Stream API.
+
+**Обновлены существующие страницы (полный Justin Song формат):**
+- `JAVA core/Generics` — PECS с примерами, type erasure детально (что нельзя делать), wildcards
+- `JAVA core/Устройство HashMap` — полное покрытие всех вопросов: бакеты, rehashing, null-ключи, HashMap vs TreeMap vs LinkedHashMap, Set-коллекции, Comparable/Comparator для Tree-структур
+- `JAVA core/ArrayList vs LinkedList` — Big O таблица, механика расширения capacity, ArrayDeque как альтернатива
+- `JAVA core/Stream API` — map vs flatMap с примерами (freq 25), functional interfaces таблица, Optional антипаттерны, параллельные стримы
+
+**Обновлены системные файлы:** `1 Java Core MOC.md`, `index.md`
+
+---
+
 ## [2026-04-13] ingest | CORE 1 Вопросы технических собеседований.pdf
 
 Источник: методичка Kata-курсов, анализ 150 собеседований Java-разработчиков.

@@ -37,6 +37,7 @@
                 }
               }
             ],
+            "currentTab": 1,
             "stacked": true
           },
           {
@@ -81,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Clarify coding task or request"
+                  "title": "Terminal: ⠐ Clarify coding task or request"
                 }
               }
             ]
@@ -249,10 +250,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
-    "2 Базы данных MOC.md",
+    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782",
     "1 Java Core MOC.md",
+    "2 Базы данных MOC.md",
     "CLAUDE.md",
     "JAVA core/Интерфейс vs абстрактный класс.md",
     "log.md",

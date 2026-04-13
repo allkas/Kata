@@ -19,10 +19,10 @@ tags: [index, system]
 | [[Иммутабельность String]] | Почему String неизменяем, String Pool, StringBuilder |
 | [[Исключения в Java]] | Checked vs unchecked, иерархия, best practices |
 | [[final static внутренние классы]] | Модификаторы, вложенные классы, анонимные классы |
-| [[Generics]] | Дженерики, wildcards, type erasure |
-| [[Устройство HashMap]] | Бакеты, коллизии, load factor, дерево vs список |
-| [[ArrayList vs LinkedList]] | Сравнение структур, когда что выбирать |
-| [[Stream API]] | map/filter/reduce, collectors, lazy evaluation |
+| [[Generics]] | Дженерики, wildcards, PECS, type erasure |
+| [[Устройство HashMap]] | Бакеты, коллизии, load factor, дерево; HashMap vs TreeMap vs LinkedHashMap; Set-коллекции |
+| [[ArrayList vs LinkedList]] | Структуры, Big O, расширение capacity, когда что выбирать |
+| [[Stream API]] | map/flatMap, functional interfaces, Optional, lazy evaluation |
 | [[Многопоточность основы]] | volatile, synchronized, deadlock, Atomic-типы, ThreadLocal |
 | [[Garbage Collector JVM]] | GC-алгоритмы, поколения, паузы |
 

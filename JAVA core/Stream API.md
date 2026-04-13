@@ -1,41 +1,174 @@
 ---
 tags: [java, streams, functional]
+sources: [CORE 2 Вопросы технических собеседований.pdf]
 ---
+
 # Stream API
-## 1. Промежуточные/терминальные операции
-- **Промежуточные** — возвращают Stream (filter, map, flatMap).
-- **Терминальные** — возвращают результат (collect, forEach, count).
-- Stream ленивый — выполняется только при вызове терминальной.
-## 2. map vs flatMap
-- **map** — преобразует каждый элемент в другой (1 → 1).
-- **flatMap** — преобразует каждый элемент в Stream и объединяет (1 → много).
+
+## 1. Проблема — зачем это существует?
+
+Обработка коллекций через `for`-циклы многословна и императивна: описываешь **как** делать, а не **что** получить. С ростом условий и трансформаций — вложенные циклы, промежуточные списки, трудночитаемый код. Stream API (Java 8) приносит декларативный стиль: описываешь цепочку трансформаций, Java выполняет её оптимально.
+
 ```java
-// map: List<List<String>> -> List<Stream<String>>
-// flatMap: List<List<String>> -> List<String>
+// Императивно:
+List<String> result = new ArrayList<>();
+for (User user : users) {
+    if (user.getAge() >= 18) {
+        result.add(user.getName().toUpperCase());
+    }
+}
+
+// Декларативно:
+List<String> result = users.stream()
+    .filter(u -> u.getAge() >= 18)
+    .map(u -> u.getName().toUpperCase())
+    .collect(Collectors.toList());
 ```
-## 3. Функциональные интерфейсы, лямбды
 
-- Predicate<T> — test()
-    
-- Function<T,R> — apply()
-    
-- Consumer<T> — accept()
-    
-- Supplier<T> — get()
-    
+## 2. Аналогия
 
-Лямбда — краткая запись анонимного метода.
+Stream — это **конвейер на заводе**. Сырьё (коллекция) подаётся на вход. Каждая станция (промежуточная операция) обрабатывает и передаёт дальше. Конечная станция (терминальная операция) производит готовый продукт. Конвейер **ленивый**: станции молчат, пока не запущен финальный этап.
 
-## 4. Optional
+## 3. Как работает
 
-Контейнер, который может содержать null. Использовать для возврата значений, а не полей.
+### Промежуточные vs терминальные операции:
+| Тип | Возвращает | Выполняется | Примеры |
+|-----|-----------|-------------|---------|
+| **Промежуточная** | `Stream<T>` | Лениво (при terminal) | `filter`, `map`, `flatMap`, `sorted`, `distinct`, `limit` |
+| **Терминальная** | Результат / void | Сразу | `collect`, `forEach`, `count`, `findFirst`, `anyMatch`, `reduce` |
 
-## 5. Можно ли повторно использовать Stream?
+```java
+list.stream()
+    .filter(x -> x > 0)     // промежуточная — ещё не выполнена
+    .map(x -> x * 2)         // промежуточная — ещё не выполнена
+    .collect(toList());       // терминальная — ЗАПУСКАЕТ весь конвейер
+```
 
-Нет. Stream можно использовать только один раз.
+### map vs flatMap — ключевое отличие:
+
+**`map`** — трансформирует каждый элемент **1 → 1**:
+```java
+// String → Integer
+List<Integer> lengths = List.of("hello", "world").stream()
+    .map(String::length)     // "hello" → 5, "world" → 5
+    .collect(toList());      // [5, 5]
+
+// List<String> → List<String[]>
+List<String[]> arrays = List.of("a b", "c d").stream()
+    .map(s -> s.split(" "))  // "a b" → ["a","b"]
+    .collect(toList());      // [["a","b"], ["c","d"]]
+```
+
+**`flatMap`** — трансформирует каждый элемент **1 → Stream**, затем **разворачивает** в один поток:
+```java
+// List<String> → Stream<String> (развёрнутый)
+List<String> words = List.of("a b", "c d").stream()
+    .flatMap(s -> Arrays.stream(s.split(" "))) // "a b" → Stream("a","b")
+    .collect(toList());      // ["a", "b", "c", "d"]
+
+// List<List<Integer>> → List<Integer>
+List<Integer> flat = List.of(List.of(1,2), List.of(3,4)).stream()
+    .flatMap(Collection::stream)
+    .collect(toList());      // [1, 2, 3, 4]
+```
+
+**Правило:** если `map` возвращает `Stream` — нужен `flatMap`, чтобы не получить `Stream<Stream<T>>`.
+
+### Функциональные интерфейсы:
+| Интерфейс | Сигнатура | Применение |
+|-----------|-----------|------------|
+| `Predicate<T>` | `T → boolean` | `filter()` |
+| `Function<T, R>` | `T → R` | `map()` |
+| `Consumer<T>` | `T → void` | `forEach()` |
+| `Supplier<T>` | `() → T` | `orElseGet()` |
+| `BiFunction<T, U, R>` | `T, U → R` | `reduce()` |
+| `UnaryOperator<T>` | `T → T` | `map()` с тем же типом |
+
+```java
+// Лямбда — это реализация функционального интерфейса
+Predicate<String> isLong = s -> s.length() > 5;
+Function<String, Integer> toLen = String::length; // method reference
+```
+
+## 4. Глубже — Optional и повторное использование
+
+### Optional — как правильно использовать:
+```java
+// Создание:
+Optional<String> opt1 = Optional.of("value");      // NPE если null
+Optional<String> opt2 = Optional.ofNullable(value); // null → empty
+Optional<String> opt3 = Optional.empty();
+
+// Использование:
+opt.orElse("default")           // значение или default
+opt.orElseGet(() -> compute())  // lazy — вычислять только если пусто
+opt.orElseThrow(NotFoundException::new) // или бросить исключение
+opt.map(String::toUpperCase)    // трансформировать если есть
+opt.filter(s -> s.length() > 3) // фильтровать
+opt.ifPresent(System.out::println) // action если есть
+
+// Антипаттерны:
+opt.get()            // ❌ NoSuchElementException если пусто — бессмысленно
+if (opt.isPresent()) { opt.get(); } // ❌ то же что null-check, теряется смысл
+void method(Optional<String> param) // ❌ Optional не для параметров методов
+class User { Optional<String> name; } // ❌ не для полей класса
+```
+
+**Optional — для возвращаемых значений**, когда отсутствие значения — нормальный сценарий:
+```java
+Optional<User> findById(Long id) {
+    return userRepository.findById(id); // Spring Data возвращает Optional
+}
+```
+
+### Повторное использование Stream:
+```java
+Stream<String> stream = list.stream();
+stream.count();  // терминальная — stream закрыт
+stream.count();  // IllegalStateException: stream has already been operated upon or closed
+```
+Stream — одноразовый. Создавать из источника заново: `list.stream()`.
+
+### Параллельные стримы:
+```java
+list.parallelStream()
+    .filter(...)
+    .collect(toList()); // ForkJoinPool, осторожно с порядком и стейтом
+```
+Использовать только для CPU-intensive задач с большими коллекциями. Не для IO, не для shared mutable state.
+
+## 5. Связи с другими концепциями
+
+- [[Generics]] — `Stream<T>`, `Function<T,R>` — всё на дженериках
+- [[ArrayList vs LinkedList]] — `.stream()` работает на любом `Collection`
+- [[Многопоточность основы]] — `parallelStream()` использует ForkJoinPool
+
+## 6. Ответ на собесе (2 минуты)
+
+> "Stream API — декларативный способ обрабатывать коллекции. Вместо цикла описываешь цепочку трансформаций: `filter → map → collect`. Stream ленивый — промежуточные операции не выполняются до вызова терминальной.
+>
+> **map vs flatMap** — самый частый вопрос. `map` трансформирует каждый элемент 1:1. Если `map` возвращает Stream — получишь `Stream<Stream<T>>`, что почти всегда не то что нужно. `flatMap` трансформирует 1 → Stream и **разворачивает** результат в один поток. Пример: список предложений — `flatMap(s -> Arrays.stream(s.split(" ")))` — даст все слова плоским списком.
+>
+> **Функциональные интерфейсы:** лямбды — это реализации интерфейсов с одним методом. `Predicate` для `filter`, `Function` для `map`, `Consumer` для `forEach`, `Supplier` для ленивого создания.
+>
+> **Optional:** использую для возвращаемых значений там, где отсутствие — нормально. Главное правило: не вызывать `get()` напрямую — только `orElse`, `orElseGet`, `orElseThrow`, `map`. Не использую Optional как параметр метода или поле класса.
+>
+> **Stream одноразовый:** после вызова терминальной операции стрим закрыт, повторный вызов — `IllegalStateException`."
+
+## Шпаргалка
+
+| Концепция | Тип | Пример |
+|-----------|-----|--------|
+| `filter` | Промежуточная | `filter(x -> x > 0)` |
+| `map` | Промежуточная, 1→1 | `map(String::length)` |
+| `flatMap` | Промежуточная, 1→Stream | `flatMap(s -> Arrays.stream(...))` |
+| `collect` | Терминальная | `collect(Collectors.toList())` |
+| `count/findFirst` | Терминальная | Запускает весь конвейер |
+| **Lazy** | Промежуточные не выполняются | До вызова terminal |
+| **One-time** | Повторное использование | `IllegalStateException` |
+| **Optional** | Для return value | `orElse`, `map`, `orElseThrow` |
 
 **Связи:**
-
-- [[Контракт equals и hashCode]]
-    
 - [[Generics]]
+- [[ArrayList vs LinkedList]]
+- [[Многопоточность основы]]

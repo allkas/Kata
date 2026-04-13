@@ -44,9 +44,9 @@ tags: [index, system]
 
 | Страница | Описание |
 |----------|----------|
-| [[Транзакции уровни изоляции]] | ACID, Read Uncommitted/Committed/Repeatable Read/Serializable |
+| [[Транзакции уровни изоляции]] | ACID детально, dirty/non-repeatable/phantom read, уровни изоляции, @Transactional propagation, MVCC |
 | [[Проблема N+1 запросов]] | Причина, как обнаружить, решения (JOIN FETCH, batch) |
-| [[SQL индексы JOIN нормализация]] | Типы индексов, виды JOIN, нормальные формы |
+| [[SQL индексы JOIN нормализация]] | B-tree механика, composite index, когда индекс вреден, JOINs, WHERE vs HAVING, 1NF/2NF/3NF, EXPLAIN |
 
 ---
 

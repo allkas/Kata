@@ -45,7 +45,7 @@ tags: [index, system]
 | Страница | Описание |
 |----------|----------|
 | [[Транзакции уровни изоляции]] | ACID детально, dirty/non-repeatable/phantom read, уровни изоляции, @Transactional propagation, MVCC |
-| [[Проблема N+1 запросов]] | Причина, как обнаружить, решения (JOIN FETCH, batch) |
+| [[Проблема N+1 запросов]] | N+1 механика, LAZY vs EAGER дефолты, LazyInitializationException, JOIN FETCH vs JOIN, @EntityGraph, @BatchSize |
 | [[SQL индексы JOIN нормализация]] | B-tree механика, composite index, когда индекс вреден, JOINs, WHERE vs HAVING, 1NF/2NF/3NF, EXPLAIN |
 
 ---

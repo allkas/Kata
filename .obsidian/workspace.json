@@ -37,6 +37,7 @@
                 }
               }
             ],
+            "currentTab": 1,
             "stacked": true
           },
           {
@@ -81,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠂ Clarify coding task or request"
+                  "title": "Terminal: ✳ Clarify coding task or request"
                 }
               }
             ]
@@ -249,11 +250,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
+    "JAVA core/Интерфейс vs абстрактный класс.md",
+    "CLAUDE.md",
     "log.md",
     "index.md",
-    "CLAUDE.md",
     "JAVA core/Многопоточность основы.md",
     "CLAUDE.md.md",
     "claude.md.md",

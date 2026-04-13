@@ -10,7 +10,7 @@
           {
             "id": "f289120b9df83bf2",
             "type": "tabs",
-            "dimension": 40,
+            "dimension": 79.16666666666666,
             "children": [
               {
                 "id": "44bc09673c9b6e07",
@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1 Java Core MOC.md",
+                    "file": "JAVA core/Основы ООП.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "1 Java Core MOC"
+                  "title": "Основы ООП"
                 }
               },
               {
@@ -37,13 +37,12 @@
                 }
               }
             ],
-            "currentTab": 1,
             "stacked": true
           },
           {
             "id": "98d1016eb7f5b365",
             "type": "tabs",
-            "dimension": 60,
+            "dimension": 20.833333333333336,
             "children": [
               {
                 "id": "47f601b527985752",
@@ -82,7 +81,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠐ Clarify coding task or request"
+                  "title": "Terminal: ⠂ Clarify coding task or request"
                 }
               }
             ]
@@ -250,10 +249,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b24f7dc21774a40b",
+  "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782",
     "1 Java Core MOC.md",
+    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782",
     "2 Базы данных MOC.md",
     "CLAUDE.md",
     "JAVA core/Интерфейс vs абстрактный класс.md",

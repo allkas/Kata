@@ -23,7 +23,7 @@ tags: [index, system]
 | [[Устройство HashMap]] | Бакеты, коллизии, load factor, дерево; HashMap vs TreeMap vs LinkedHashMap; Set-коллекции |
 | [[ArrayList vs LinkedList]] | Структуры, Big O, расширение capacity, когда что выбирать |
 | [[Stream API]] | map/flatMap, functional interfaces, Optional, lazy evaluation |
-| [[Многопоточность основы]] | volatile, synchronized, deadlock, Atomic-типы, ThreadLocal |
+| [[Многопоточность основы]] | volatile/synchronized/Atomic, deadlock/livelock/race condition, Runnable vs Callable, ThreadLocal |
 | [[Garbage Collector JVM]] | GC-алгоритмы, поколения, паузы |
 
 ---

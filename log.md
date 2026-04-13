@@ -5,6 +5,17 @@
 
 ---
 
+## [2026-04-13] ingest | Многопоточность Вопросы технических собеседований.pdf
+
+Источник: методичка Kata-курсов, тема Многопоточность.
+
+**Обновлена существующая страница (полный Justin Song формат + значительное расширение):**
+- `JAVA core/Многопоточность основы` — volatile (гарантии и антипаттерны), double-checked locking, volatile vs synchronized таблица, race condition/deadlock/livelock с кодом и способами избежать, CAS механика + таблица Atomic-классов, Runnable vs Callable + Future API, ThreadLocal с примерами и ловушкой утечки памяти в пуле потоков
+
+**Обновлены системные файлы:** `index.md`
+
+---
+
 ## [2026-04-13] ingest | CORE 2 Вопросы технических собеседований.pdf
 
 Источник: методичка Kata-курсов, CORE 2 — Generics, Collections, Stream API.

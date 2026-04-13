@@ -5,6 +5,33 @@
 
 ---
 
+## [2026-04-13] ingest | Вопросы технических собеседований (1).pdf — мастер-список
+
+Источник: общий мастер-список всех вопросов с частотами (150 собеседований, 29 тем).
+
+**Действие: gap-анализ и заполнение пробелов**
+
+Сравнён мастер-список со всеми существующими страницами wiki. Выявлены страницы-стабы и проведён полный Justin Song rewrite:
+
+**Переписаны стабы (были 5–10 строк):**
+- `JAVA core/final static внутренние классы` — freq 12/9/5 — final vs static, static nested, inner, anonymous, Builder pattern
+- `Микросервисы/Unit-тесты Mockito` — обзорная страница со всей механикой (@Mock/@Spy/@InjectMocks, when/verify, void, ArgumentCaptor), ссылки на детальные страницы
+- `ИНФРАСТУКТУРА/Git merge vs rebase` — freq 18 — механика merge/rebase, золотое правило, стратегии команд
+- `ИНФРАСТУКТУРА/Git fetch vs pull` — freq 12 — fetch vs pull, безопасный workflow
+- `ИНФРАСТУКТУРА/Жизненный цикл Maven` — freq 15 — фазы, dependency management, scope, профили
+- `ИНФРАСТУКТУРА/Docker vs VM` — freq 10 — namespace/cgroups, Dockerfile слои, multi-stage build
+
+**Завершён ingest Spring PDF (начат в предыдущей сессии):**
+- `Spring/Spring MVC REST (Controller vs RestController)` — @Controller vs @RestController, CRUD-таблица со статусами, DispatcherServlet, @ModelAttribute для фильтров
+- `Spring/Глобальная обработка исключений в Spring` — @RestControllerAdvice, @ExceptionHandler, ResponseEntity, сужение области, связь с AOP
+
+**Состояние после gap-анализа:**
+- Страницы с хорошим контентом в нестандартном формате (emoji/callouts): HTTP-страницы, Kafka-страницы — контент полный, формат отличается от шаблона
+- Все индивидуальные страницы Mockito (Mock vs Spy, @Mock/@InjectMocks/@Spy, verify) — ХОРОШИЙ контент
+- Микросервисы-страницы (Декомпозиция, Circuit Breaker, Service Discovery, vs монолит) — ХОРОШИЙ контент
+
+---
+
 ## [2026-04-13] ingest | HIBERNATE Вопросы технических собеседований.pdf
 
 Источник: методичка Kata-курсов, тема Hibernate/JPA.

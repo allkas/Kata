@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "JAVA core/Контракт equals и hashCode.md",
+                    "file": "index.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Контракт equals и hashCode"
+                  "title": "index"
                 }
               },
               {
@@ -251,18 +251,20 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "index.md",
+    "Spring/Spring Core IoC DI.md",
+    "3 Spring MOC.md",
     "1 Java Core MOC.md",
+    "JAVA core/Контракт equals и hashCode.md",
     "2 Базы данных MOC.md",
     "JAVA core/Основы ООП.md",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782",
     "CLAUDE.md",
     "JAVA core/Интерфейс vs абстрактный класс.md",
     "log.md",
-    "index.md",
     "JAVA core/Многопоточность основы.md",
     "CLAUDE.md.md",
     "claude.md.md",
-    "3 Spring MOC.md",
     "JAVA core/final static внутренние классы.md"
   ]
 }

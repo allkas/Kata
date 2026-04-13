@@ -10,6 +10,7 @@
           {
             "id": "f289120b9df83bf2",
             "type": "tabs",
+            "dimension": 40,
             "children": [
               {
                 "id": "44bc09673c9b6e07",
@@ -17,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "JAVA core/Многопоточность основы.md",
+                    "file": "CLAUDE.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Многопоточность основы"
+                  "title": "CLAUDE"
                 }
               },
               {
@@ -41,6 +42,7 @@
           {
             "id": "98d1016eb7f5b365",
             "type": "tabs",
+            "dimension": 60,
             "children": [
               {
                 "id": "47f601b527985752",
@@ -79,7 +81,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Claude Code"
+                  "title": "Terminal: ⠂ Clarify coding task or request"
                 }
               }
             ]
@@ -249,8 +251,11 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "CLAUDE.md.md",
+    "log.md",
+    "index.md",
+    "CLAUDE.md",
     "JAVA core/Многопоточность основы.md",
+    "CLAUDE.md.md",
     "claude.md.md",
     "1 Java Core MOC.md",
     "3 Spring MOC.md",

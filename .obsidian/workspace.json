@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "CLAUDE.md",
+                    "file": "1 Java Core MOC.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "CLAUDE"
+                  "title": "1 Java Core MOC"
                 }
               },
               {
@@ -37,7 +37,6 @@
                 }
               }
             ],
-            "currentTab": 1,
             "stacked": true
           },
           {
@@ -250,19 +249,19 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b24f7dc21774a40b",
+  "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "JAVA core/Интерфейс vs абстрактный класс.md",
+    "2 Базы данных MOC.md",
+    "1 Java Core MOC.md",
     "CLAUDE.md",
+    "JAVA core/Интерфейс vs абстрактный класс.md",
     "log.md",
     "index.md",
     "JAVA core/Многопоточность основы.md",
     "CLAUDE.md.md",
     "claude.md.md",
-    "1 Java Core MOC.md",
     "3 Spring MOC.md",
     "JAVA core/Основы ООП.md",
-    "JAVA core/final static внутренние классы.md",
-    "2 Базы данных MOC.md"
+    "JAVA core/final static внутренние классы.md"
   ]
 }

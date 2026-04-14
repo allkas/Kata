@@ -262,6 +262,15 @@
   },
   "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
+    "index.md.tmp.14120.1776164358291",
+    "JAVA core/Отличия Java 8 и Java 11.md",
+    "JAVA core/Исключения в Java.md",
+    "БД/PostgreSQL vs MySQL.md",
+    "БД/Хранение паролей хеширование шифрование.md",
+    "ИНФРАСТУКТУРА/CI CD GitLab Jenkins.md",
+    "Микросервисы/SOAP vs REST.md",
+    "Микросервисы/Distributed Tracing Zipkin Jaeger.md",
+    "Микросервисы/WebSocket.md",
     "4 Микросервисы MOC.md",
     "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
     "index.md",
@@ -280,14 +289,6 @@
     "JAVA core/Основы ООП.md",
     "CLAUDE.md",
     "Spring/Spring Core IoC DI.md",
-    "3 Spring MOC.md",
-    "JAVA core/Контракт equals и hashCode.md",
-    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782",
-    "JAVA core/Интерфейс vs абстрактный класс.md",
-    "log.md",
-    "JAVA core/Многопоточность основы.md",
-    "CLAUDE.md.md",
-    "claude.md.md",
-    "JAVA core/final static внутренние классы.md"
+    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]
 }

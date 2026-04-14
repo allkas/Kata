@@ -5,6 +5,34 @@
 
 ---
 
+## [2026-04-14] ingest | Прочие_Реже встречающиеся вопросы технических собеседований.pdf
+
+Источник: методичка Kata-курсов, редкие вопросы (все с freq 2/150 — ниже порога «сомнительной ценности» по самому PDF).
+
+**Статистика из источника (все freq 2):**
+- JSON-RPC, WebSocket, SOAP vs REST, Синхронное/асинхронное взаимодействие
+- Паттерн Saga, Distributed Tracing (Zipkin/Jaeger)
+- CI/CD (GitLab, Jenkins), Хранение паролей, PostgreSQL vs MySQL
+- Разница == и equals, Отличия Java 8 и Java 11
+
+**Переписаны в полный Justin Song формат (были в старом quote-блочном стиле):**
+- `Микросервисы/Распределённые транзакции саги` — механика Saga, хореография vs оркестрация, идемпотентность шагов, eventual consistency, Camunda/Axon
+- `Микросервисы/Асинхронное и сихронное взаимодействие` — temporal coupling, буферизация пиков, decoupling, Dead Letter Queue, когда оставлять sync
+
+**Созданы новые страницы:**
+- `Микросервисы/WebSocket` — handshake, STOMP в Spring, SSE как альтернатива, масштабирование через Redis Pub/Sub
+- `Микросервисы/Distributed Tracing Zipkin Jaeger` — Trace/Span/TraceID, propagation headers, Zipkin vs Jaeger, sampling в prod, корреляция с логами (MDC)
+- `Микросервисы/SOAP vs REST` — XML/WSDL vs JSON/OpenAPI, WS-Security, JSON-RPC поверх HTTP, gRPC как современная альтернатива SOAP
+- `ИНФРАСТУКТУРА/CI CD GitLab Jenkins` — CI vs CD vs Continuous Deployment, `.gitlab-ci.yml` vs Jenkinsfile, stages/artifacts/cache, secrets, `when: manual` для prod
+- `БД/Хранение паролей хеширование шифрование` — BCrypt (cost factor, встроенная соль), Argon2, атаки (rainbow table, brute force), шифрование vs хеширование vs кодирование, pepper
+- `БД/PostgreSQL vs MySQL` — JSONB, PostGIS, расширения, VACUUM, когда что выбирать, Oracle для enterprise
+- `JAVA core/Отличия Java 8 и Java 11` — var, HTTP Client, String API (isBlank/strip/lines/repeat), Collection.of(), модули, удалён JAXB/JAX-WS
+
+**Уже покрыто (страницы существуют):**
+- `== и equals` → `Контракт equals и hashCode` (JAVA core)
+
+---
+
 ## [2026-04-14] ingest | DevOps И ИНФРАСТУКТУРА Вопросы технических собеседований.pdf
 
 Источник: методичка Kata-курсов, темы: Git, Maven, Docker, Kubernetes.

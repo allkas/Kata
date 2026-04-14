@@ -28,6 +28,7 @@ tags: [index, system]
 | [[Паттерны проектирования]] | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy |
 | [[Алгоритмы на собесе]] | Live coding: HashMap-задачи, два указателя, рекурсия, Big O |
 | [[Garbage Collector JVM]] | GC-алгоритмы, поколения, паузы |
+| [[Отличия Java 8 и Java 11]] | var, HTTP Client, String API, Collection.of(), модули |
 
 ---
 
@@ -50,6 +51,8 @@ tags: [index, system]
 | [[Транзакции уровни изоляции]] | ACID детально, dirty/non-repeatable/phantom read, уровни изоляции, @Transactional propagation, MVCC |
 | [[Проблема N+1 запросов]] | N+1 механика, LAZY vs EAGER дефолты, LazyInitializationException, JOIN FETCH vs JOIN, @EntityGraph, @BatchSize |
 | [[SQL индексы JOIN нормализация]] | B-tree механика, composite index, когда индекс вреден, JOINs, WHERE vs HAVING, 1NF/2NF/3NF, EXPLAIN |
+| [[PostgreSQL vs MySQL]] | Сравнение, JSONB, расширения, когда что выбирать |
+| [[Хранение паролей хеширование шифрование]] | BCrypt, соль, атаки, шифрование vs хеширование |
 
 ---
 
@@ -63,7 +66,10 @@ tags: [index, system]
 | [[Circuit Breaker]] | Паттерн отказоустойчивости, Resilience4J, состояния |
 | [[Распределённые транзакции саги]] | Saga pattern, choreography vs orchestration |
 | [[Highload проблемы]] | Масштабирование, кэши, bottleneck |
-| [[Асинхронное и сихронное взаимодействие]] | REST vs очереди, когда что использовать |
+| [[Асинхронное и сихронное взаимодействие]] | REST vs очереди, temporal coupling, буферизация пиков |
+| [[WebSocket]] | Двустороннее соединение, STOMP, SSE, масштабирование |
+| [[Distributed Tracing Zipkin Jaeger]] | Trace/Span, Zipkin vs Jaeger, sampling, observability |
+| [[SOAP vs REST]] | SOAP/WSDL vs REST, JSON-RPC, gRPC сравнение |
 
 ---
 
@@ -127,6 +133,7 @@ tags: [index, system]
 | [[Git merge vs rebase]] | Линейная vs историческая история, когда что |
 | [[Git fetch vs pull]] | Безопасное обновление репозитория |
 | [[Git cherry-pick]] | Перенос отдельных коммитов |
+| [[CI CD GitLab Jenkins]] | Пайплайны, GitLab CI YAML vs Jenkinsfile |
 
 ---
 

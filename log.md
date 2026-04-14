@@ -5,6 +5,36 @@
 
 ---
 
+## [2026-04-14] ingest | DevOps И ИНФРАСТУКТУРА Вопросы технических собеседований.pdf
+
+Источник: методичка Kata-курсов, темы: Git, Maven, Docker, Kubernetes.
+
+**Статистика из источника (150 собеседований):**
+- Git merge vs rebase — freq 18
+- Жизненный цикл Maven — freq 15
+- Git fetch vs pull — freq 12
+- Dependency management — freq 10
+- Docker vs VM — freq 10
+- Dockerfile — freq 8
+- Профили Maven — freq 8
+- Kubernetes pod/deployment/service — freq 5
+- Git cherry-pick — freq 5
+
+**Страницы уже в полном Justin Song формате (проверены, изменений не потребовали):**
+- `ИНФРАСТУКТУРА/Git merge vs rebase` — golden rule, squash, interactive rebase
+- `ИНФРАСТУКТУРА/Жизненный цикл Maven` — все фазы, dependency management, scope, profiles
+- `ИНФРАСТУКТУРА/Docker vs VM` — namespace/cgroups, layer caching, multi-stage build
+- `ИНФРАСТУКТУРА/Git fetch vs pull` — безопасный workflow, detached HEAD
+
+**Переписаны в полный Justin Song формат (были в старом emoji/callout стиле):**
+- `ИНФРАСТУКТУРА/Dockerfile и слои образа` — freq 8 — слоевая модель, кэш инструкций, CMD vs ENTRYPOINT (exec form vs shell form), multi-stage сборка Maven→JRE, .dockerignore, non-root user
+- `ИНФРАСТУКТУРА/Kubernetes pod deployment service` — freq 5 — Pod/Deployment/Service YAML, Rolling Update, readiness vs liveness probe, ConfigMap/Secret, аналогия с Service Discovery
+- `ИНФРАСТУКТУРА/Git cherry-pick` — freq 5 — диапазон коммитов, cherry-pick vs merge vs rebase таблица, новый хэш при переносе, проблема дублей при последующем merge
+- `ИНФРАСТУКТУРА/Dependency management` — freq 10 — nearest wins / first declared wins, `<dependencyManagement>`, BOM, exclusions, `mvn dependency:tree`
+- `ИНФРАСТУКТУРА/Профили Maven` — freq 8 — активация по CLI/условию/ОС/JDK, filtering ресурсов, Maven profiles vs Spring profiles, settings.xml
+
+---
+
 ## [2026-04-14] ingest | Тестирование Вопросы технических собеседований.pdf
 
 Источник: методичка Kata-курсов, тема: Unit-тесты и Mockito.

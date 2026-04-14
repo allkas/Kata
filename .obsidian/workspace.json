@@ -82,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠂ Continue knowledge base for interview preparation"
+                  "title": "Terminal: ✳ Continue knowledge base for interview preparation"
                 }
               }
             ]
@@ -260,7 +260,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "e534e563cadac80f",
+  "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
     "4 Микросервисы MOC.md",
     "Микросервисы/Чем Mock отличается от Spy (Mockito).md",

@@ -24,6 +24,9 @@ tags: [index, system]
 | [[ArrayList vs LinkedList]] | Структуры, Big O, расширение capacity, когда что выбирать |
 | [[Stream API]] | map/flatMap, functional interfaces, Optional, lazy evaluation |
 | [[Многопоточность основы]] | volatile/synchronized/Atomic, deadlock/livelock/race condition, Runnable vs Callable, ThreadLocal |
+| [[CompletableFuture и пулы потоков]] | CompletableFuture цепочки, ExecutorService, ForkJoinPool |
+| [[Паттерны проектирования]] | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy |
+| [[Алгоритмы на собесе]] | Live coding: HashMap-задачи, два указателя, рекурсия, Big O |
 | [[Garbage Collector JVM]] | GC-алгоритмы, поколения, паузы |
 
 ---

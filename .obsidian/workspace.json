@@ -81,7 +81,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠐ Continue knowledge base for interview preparation"
+                  "title": "Terminal: ✳ Continue knowledge base for interview preparation"
                 }
               }
             ]
@@ -262,6 +262,7 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "log.md.tmp.14120.1776162518286",
     "JAVA core/CompletableFuture и пулы потоков.md",
     "Микросервисы/Unit-тесты Mockito.md",
     "index.md",

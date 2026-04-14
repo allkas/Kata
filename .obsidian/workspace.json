@@ -37,7 +37,6 @@
                 }
               }
             ],
-            "currentTab": 1,
             "stacked": true
           },
           {
@@ -82,7 +81,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠂ Continue knowledge base for interview preparation"
+                  "title": "Terminal: ⠐ Continue knowledge base for interview preparation"
                 }
               }
             ]
@@ -221,12 +220,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура"
+              "title": "Структура index"
             }
           },
           {
@@ -260,11 +260,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b24f7dc21774a40b",
+  "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "JAVA core/CompletableFuture и пулы потоков.md",
+    "Микросервисы/Unit-тесты Mockito.md",
+    "index.md",
+    "6 DevOps И ИНФРАСТУКТУРА.md",
+    "JAVA core/Алгоритмы на собесе.md",
     "JAVA core/Паттерны проектирования.md",
     "PUT vs PATCH — идемпотентность HTTP-методов.md",
-    "index.md",
     "00 Индекс всех тем.md",
     "JAVA core/SQL индексы JOIN нормализация.md",
     "2 Базы данных MOC.md",
@@ -272,7 +276,6 @@
     "Spring/Глобальная обработка исключений в Spring.md",
     "JAVA core/Основы ООП.md",
     "CLAUDE.md",
-    "Микросервисы/Unit-тесты Mockito.md",
     "Spring/Spring Core IoC DI.md",
     "3 Spring MOC.md",
     "JAVA core/Контракт equals и hashCode.md",

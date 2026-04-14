@@ -30,13 +30,18 @@
                 "id": "b24f7dc21774a40b",
                 "type": "leaf",
                 "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Граф"
+                  "type": "markdown",
+                  "state": {
+                    "file": "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Чем Mock отличается от Spy (Mockito)"
                 }
               }
             ],
+            "currentTab": 1,
             "stacked": true
           },
           {
@@ -220,13 +225,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md",
+                "file": "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура index"
+              "title": "Структура Чем Mock отличается от Spy (Mockito)"
             }
           },
           {
@@ -260,12 +265,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
+    "4 Микросервисы MOC.md",
+    "index.md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/CompletableFuture и пулы потоков.md",
     "Микросервисы/Unit-тесты Mockito.md",
-    "index.md",
     "6 DevOps И ИНФРАСТУКТУРА.md",
     "JAVA core/Алгоритмы на собесе.md",
     "JAVA core/Паттерны проектирования.md",

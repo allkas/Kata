@@ -19,7 +19,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "index.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
@@ -82,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Continue knowledge base for interview preparation"
+                  "title": "Terminal: cmd"
                 }
               }
             ]
@@ -262,6 +262,11 @@
   },
   "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
+    "index.md",
+    "2 Базы данных MOC.md",
+    "1 Java Core MOC.md",
+    "JAVA core/SQL индексы JOIN нормализация.md",
+    "00 Индекс всех тем.md",
     "index.md.tmp.14120.1776164358291",
     "JAVA core/Отличия Java 8 и Java 11.md",
     "JAVA core/Исключения в Java.md",
@@ -273,7 +278,6 @@
     "Микросервисы/WebSocket.md",
     "4 Микросервисы MOC.md",
     "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
-    "index.md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/CompletableFuture и пулы потоков.md",
     "Микросервисы/Unit-тесты Mockito.md",
@@ -281,10 +285,6 @@
     "JAVA core/Алгоритмы на собесе.md",
     "JAVA core/Паттерны проектирования.md",
     "PUT vs PATCH — идемпотентность HTTP-методов.md",
-    "00 Индекс всех тем.md",
-    "JAVA core/SQL индексы JOIN нормализация.md",
-    "2 Базы данных MOC.md",
-    "1 Java Core MOC.md",
     "Spring/Глобальная обработка исключений в Spring.md",
     "JAVA core/Основы ООП.md",
     "CLAUDE.md",

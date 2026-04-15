@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "log.md",
+                    "file": "Микросервисы/Разница HTTP методов.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "log"
+                  "title": "Разница HTTP методов"
                 }
               },
               {
@@ -302,8 +302,11 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "Без названия.canvas",
+    "5 Инструменты MOC.md",
+    "Devops/Git merge rebase.md",
+    "Devops/Maven жизненный цикл.md",
     "log.md",
+    "Без названия.canvas",
     "Без названия.base",
     "index.md",
     "1 Java Core MOC.md",
@@ -329,8 +332,6 @@
     "Микросервисы/Unit-тесты Mockito.md",
     "6 DevOps И ИНФРАСТУКТУРА.md",
     "JAVA core/Алгоритмы на собесе.md",
-    "JAVA core/Паттерны проектирования.md",
-    "PUT vs PATCH — идемпотентность HTTP-методов.md",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]
 }

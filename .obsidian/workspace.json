@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "index.md",
+                    "file": "log.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "index"
+                  "title": "log"
                 }
               },
               {
@@ -302,11 +302,13 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "Без названия.canvas",
+    "log.md",
+    "Без названия.base",
+    "index.md",
     "1 Java Core MOC.md",
     "00 Индекс всех тем.md",
     "Микросервисы/Микросервисы vs монолит.md",
-    "index.md",
-    "log.md",
     "Spring/Spring Core IoC DI.md",
     "4 Микросервисы MOC.md",
     "3 Spring MOC.md",
@@ -329,7 +331,6 @@
     "JAVA core/Алгоритмы на собесе.md",
     "JAVA core/Паттерны проектирования.md",
     "PUT vs PATCH — идемпотентность HTTP-методов.md",
-    "Spring/Глобальная обработка исключений в Spring.md",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]
 }

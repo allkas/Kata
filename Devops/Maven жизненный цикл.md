@@ -22,8 +22,19 @@ tags: [maven, build, tools]
     </profile>
 </profiles>
 ```
+## 6. Ответ на собесе (2 минуты)
+
+> "Maven — это система сборки с фиксированным жизненным циклом. Когда запускаем `mvn package`, Maven последовательно выполняет фазы: `validate → compile → test → package`. Каждая следующая фаза включает предыдущие — нельзя запустить `package`, минуя `test`.
+>
+> Три основных цикла: default (сборка), clean (очистка), site (документация). В default цикле ключевые фазы: compile → test → package → install (в локальный repo) → deploy (на удалённый).
+>
+> Dependency management — это механизм централизованного управления версиями зависимостей в parent POM через `<dependencyManagement>`. Дочерние модули наследуют версии и не указывают их явно. Это предотвращает 'dependency hell' в многомодульных проектах."
+
 **Связи:**
 
-- [[Docker Kubernetes]]
-    
+- [[Жизненный цикл Maven]]
+- [[Dependency management]]
+- [[Профили Maven]]
 - [[Spring Boot]]
+
+> ⚠️ Устаревший файл. Актуальные страницы находятся в `ИНФРАСТУКТУРА/`.

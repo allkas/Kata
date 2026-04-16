@@ -37,6 +37,7 @@
                 }
               }
             ],
+            "currentTab": 1,
             "stacked": true
           },
           {
@@ -161,10 +162,51 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: Выбрать claude"
+                  "title": "Terminal: cmd"
+                }
+              },
+              {
+                "id": "e33e2283c809a8b6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "C:\\Users\\all\\OneDrive\\Desktop\\Kata",
+                      "focus": false,
+                      "profile": {
+                        "args": [],
+                        "executable": "C:\\Windows\\System32\\cmd.exe",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "win32": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: ✳ Prepare interview Q&A documentation"
                 }
               }
-            ]
+            ],
+            "currentTab": 3
           }
         ],
         "direction": "horizontal"
@@ -339,8 +381,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "b24f7dc21774a40b",
   "lastOpenFiles": [
+    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
+    "JAVA core/CompletableFuture и пулы потоков.md",
     "1 Java Core MOC.md",
     "JAVA core/SQL индексы JOIN нормализация.md",
     "2 Базы данных MOC.md",
@@ -368,9 +412,7 @@
     "Микросервисы/SOAP vs REST.md",
     "Микросервисы/Distributed Tracing Zipkin Jaeger.md",
     "Микросервисы/WebSocket.md",
-    "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
     "log.md.tmp.14120.1776162518286",
-    "JAVA core/CompletableFuture и пулы потоков.md",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]
 }

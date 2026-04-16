@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Микросервисы/Разница HTTP методов.md",
+                    "file": "JAVA core/CompletableFuture и пулы потоков.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Разница HTTP методов"
+                  "title": "CompletableFuture и пулы потоков"
                 }
               },
               {
@@ -123,9 +123,48 @@
                   "icon": "terminal",
                   "title": "Terminal: cmd"
                 }
+              },
+              {
+                "id": "26d0343cbd9d898a",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "C:\\Users\\all\\OneDrive\\Desktop\\Kata",
+                      "focus": false,
+                      "profile": {
+                        "args": [],
+                        "executable": "C:\\Windows\\System32\\cmd.exe",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "win32": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: Выбрать claude"
+                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal"
@@ -302,6 +341,12 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "1 Java Core MOC.md",
+    "JAVA core/SQL индексы JOIN нормализация.md",
+    "2 Базы данных MOC.md",
+    "ИНФРАСТУКТУРА/Docker vs VM.md",
+    "6 DevOps И ИНФРАСТУКТУРА.md",
+    "Микросервисы/Разница HTTP методов.md",
     "5 Инструменты MOC.md",
     "Devops/Git merge rebase.md",
     "Devops/Maven жизненный цикл.md",
@@ -309,14 +354,11 @@
     "Без названия.canvas",
     "Без названия.base",
     "index.md",
-    "1 Java Core MOC.md",
     "00 Индекс всех тем.md",
     "Микросервисы/Микросервисы vs монолит.md",
     "Spring/Spring Core IoC DI.md",
     "4 Микросервисы MOC.md",
     "3 Spring MOC.md",
-    "2 Базы данных MOC.md",
-    "JAVA core/SQL индексы JOIN нормализация.md",
     "index.md.tmp.14120.1776164358291",
     "JAVA core/Отличия Java 8 и Java 11.md",
     "JAVA core/Исключения в Java.md",
@@ -329,9 +371,6 @@
     "Микросервисы/Чем Mock отличается от Spy (Mockito).md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/CompletableFuture и пулы потоков.md",
-    "Микросервисы/Unit-тесты Mockito.md",
-    "6 DevOps И ИНФРАСТУКТУРА.md",
-    "JAVA core/Алгоритмы на собесе.md",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]
 }

@@ -10,25 +10,25 @@ tags: [index, system]
 
 ## Java Core
 
-| Страница | Описание |
-|----------|----------|
-| [[Основы ООП]] | Инкапсуляция, наследование, полиморфизм, абстракция; override vs hide |
-| [[Интерфейс vs абстрактный класс]] | Сравнение, default-методы, когда что выбирать |
-| [[Принципы SOLID]] | 5 принципов проектирования кода с примерами нарушений |
-| [[Контракт equals и hashCode]] | Правила переопределения, связь с коллекциями |
-| [[Иммутабельность String]] | Почему String неизменяем, String Pool, StringBuilder |
-| [[Исключения в Java]] | Checked vs unchecked, иерархия, best practices |
-| [[final static внутренние классы]] | Модификаторы, вложенные классы, анонимные классы |
-| [[Generics]] | Дженерики, wildcards, PECS, type erasure |
-| [[Устройство HashMap]] | Бакеты, коллизии, load factor, дерево; HashMap vs TreeMap vs LinkedHashMap; Set-коллекции |
-| [[ArrayList vs LinkedList]] | Структуры, Big O, расширение capacity, когда что выбирать |
-| [[Stream API]] | map/flatMap, functional interfaces, Optional, lazy evaluation |
-| [[Многопоточность основы]] | volatile/synchronized/Atomic, deadlock/livelock/race condition, Runnable vs Callable, ThreadLocal |
-| [[CompletableFuture и пулы потоков]] | CompletableFuture цепочки, ExecutorService, ForkJoinPool |
-| [[Паттерны проектирования]] | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy |
-| [[Алгоритмы на собесе]] | Live coding: HashMap-задачи, два указателя, рекурсия, Big O |
-| [[Garbage Collector JVM]] | GC-алгоритмы, поколения, паузы |
-| [[Отличия Java 8 и Java 11]] | var, HTTP Client, String API, Collection.of(), модули |
+| Страница                             | Описание                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| [[Основы ООП]]                       | Инкапсуляция, наследование, полиморфизм, абстракция; override vs hide                             |
+| [[Интерфейс vs абстрактный класс]]   | Сравнение, default-методы, когда что выбирать                                                     |
+| [[Принципы SOLID]]                   | 5 принципов проектирования кода с примерами нарушений                                             |
+| [[Контракт equals и hashCode]]       | Правила переопределения, связь с коллекциями                                                      |
+| [[Иммутабельность String]]           | Почему String неизменяем, String Pool, StringBuilder                                              |
+| [[Исключения в Java]]                | Checked vs unchecked, иерархия, best practices                                                    |
+| [[final static внутренние классы]]   | Модификаторы, вложенные классы, анонимные классы                                                  |
+| [[Generics]]                         | Дженерики, wildcards, PECS, type erasure                                                          |
+| [[Устройство HashMap]]               | Бакеты, коллизии, load factor, дерево; HashMap vs TreeMap vs LinkedHashMap; Set-коллекции         |
+| [[ArrayList vs LinkedList]]          | Структуры, Big O, расширение capacity, когда что выбирать                                         |
+| [[Stream API]]                       | map/flatMap, functional interfaces, Optional, lazy evaluation                                     |
+| [[Многопоточность основы]]           | volatile/synchronized/Atomic, deadlock/livelock/race condition, Runnable vs Callable, ThreadLocal |
+| [[CompletableFuture и пулы потоков]] | CompletableFuture цепочки, ExecutorService, ForkJoinPool                                          |
+| [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy                            |
+| [[Алгоритмы на собесе]]              | Live coding: HashMap-задачи, два указателя, рекурсия, Big O                                       |
+| [[Garbage Collector JVM]]            | GC-алгоритмы, поколения, паузы                                                                    |
+| [[Отличия Java 8 и Java 11]]         | var, HTTP Client, String API, Collection.of(), модули                                             |
 
 ---
 

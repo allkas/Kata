@@ -10,7 +10,7 @@
           {
             "id": "f289120b9df83bf2",
             "type": "tabs",
-            "dimension": 61.5625,
+            "dimension": 79.16666666666666,
             "children": [
               {
                 "id": "44bc09673c9b6e07",
@@ -18,36 +18,31 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "JAVA core/CompletableFuture и пулы потоков.md",
-                    "mode": "source",
+                    "file": "JAVA core/Многопоточность основы.md",
+                    "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "CompletableFuture и пулы потоков"
+                  "title": "Многопоточность основы"
                 }
               },
               {
                 "id": "b24f7dc21774a40b",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "log.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "log"
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Граф"
                 }
               }
             ],
-            "currentTab": 1,
             "stacked": true
           },
           {
             "id": "4ba1153f6f73342f",
             "type": "tabs",
-            "dimension": 38.4375,
+            "dimension": 20.833333333333336,
             "children": [
               {
                 "id": "e534e563cadac80f",
@@ -385,11 +380,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "b24f7dc21774a40b",
+  "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
-    "JAVA core/CompletableFuture и пулы потоков.md",
+    "index.md",
+    "JAVA core/Stream API.md",
     "1 Java Core MOC.md",
+    "JAVA core/CompletableFuture и пулы потоков.md",
+    "log.md",
+    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
     "JAVA core/SQL индексы JOIN нормализация.md",
     "2 Базы данных MOC.md",
     "ИНФРАСТУКТУРА/Docker vs VM.md",
@@ -398,10 +396,8 @@
     "5 Инструменты MOC.md",
     "Devops/Git merge rebase.md",
     "Devops/Maven жизненный цикл.md",
-    "log.md",
     "Без названия.canvas",
     "Без названия.base",
-    "index.md",
     "00 Индекс всех тем.md",
     "Микросервисы/Микросервисы vs монолит.md",
     "Spring/Spring Core IoC DI.md",
@@ -415,7 +411,6 @@
     "ИНФРАСТУКТУРА/CI CD GitLab Jenkins.md",
     "Микросервисы/SOAP vs REST.md",
     "Микросервисы/Distributed Tracing Zipkin Jaeger.md",
-    "Микросервисы/WebSocket.md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]

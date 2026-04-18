@@ -18,22 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "JAVA core/Многопоточность основы.md",
+                    "file": "Spring/7.md",
                     "mode": "preview",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Многопоточность основы"
-                }
-              },
-              {
-                "id": "b24f7dc21774a40b",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Граф"
+                  "title": "7"
                 }
               }
             ],
@@ -205,7 +195,8 @@
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 3,
+            "stacked": true
           }
         ],
         "direction": "horizontal"
@@ -383,8 +374,13 @@
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
     "index.md",
-    "JAVA core/Stream API.md",
+    "JAVA core/Устройство HashMap.md",
     "1 Java Core MOC.md",
+    "JAVA core/Контракт equals и hashCode.md",
+    "JAVA core/ArrayList vs LinkedList.md",
+    "JAVA core/Интерфейс vs абстрактный класс.md",
+    "JAVA core/Многопоточность основы.md",
+    "JAVA core/Stream API.md",
     "JAVA core/CompletableFuture и пулы потоков.md",
     "log.md",
     "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
@@ -400,17 +396,12 @@
     "Без названия.base",
     "00 Индекс всех тем.md",
     "Микросервисы/Микросервисы vs монолит.md",
-    "Spring/Spring Core IoC DI.md",
+    "Spring/7.md",
     "4 Микросервисы MOC.md",
     "3 Spring MOC.md",
     "index.md.tmp.14120.1776164358291",
     "JAVA core/Отличия Java 8 и Java 11.md",
     "JAVA core/Исключения в Java.md",
-    "БД/PostgreSQL vs MySQL.md",
-    "БД/Хранение паролей хеширование шифрование.md",
-    "ИНФРАСТУКТУРА/CI CD GitLab Jenkins.md",
-    "Микросервисы/SOAP vs REST.md",
-    "Микросервисы/Distributed Tracing Zipkin Jaeger.md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]

@@ -131,7 +131,46 @@ Map<String, Integer> map = Map.of("a", 1, "b", 2);
 // ⚠️ List.of() — immutable, UnsupportedOperationException при add()
 ```
 
-## 4. Глубже — что важно знать
+## 4. Java 8 — Date/Time API (java.time)
+
+До Java 8 — `java.util.Date` и `Calendar`: изменяемые (mutable), не thread-safe, неудобный API.
+
+### Основные классы java.time:
+```java
+// LocalDate — только дата (без времени и зон)
+LocalDate today = LocalDate.now();
+LocalDate birthday = LocalDate.of(1990, Month.MARCH, 15);
+LocalDate nextWeek = today.plusWeeks(1);
+boolean isBefore = birthday.isBefore(today); // true
+
+// LocalTime — только время
+LocalTime now = LocalTime.now();
+LocalTime noon = LocalTime.of(12, 0, 0);
+
+// LocalDateTime — дата + время (без зоны)
+LocalDateTime dt = LocalDateTime.now();
+LocalDateTime event = LocalDateTime.of(2025, 6, 1, 14, 30);
+String formatted = event.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm"));
+
+// ZonedDateTime — дата + время + зона
+ZonedDateTime moscow = ZonedDateTime.now(ZoneId.of("Europe/Moscow"));
+ZonedDateTime utc = moscow.withZoneSameInstant(ZoneId.of("UTC"));
+
+// Period — разница в датах (годы, месяцы, дни)
+Period age = Period.between(birthday, today);
+System.out.println(age.getYears()); // возраст в годах
+
+// Duration — разница во времени (часы, минуты, секунды)
+Duration d = Duration.between(LocalTime.of(9, 0), LocalTime.of(17, 30));
+System.out.println(d.toHours()); // 8
+```
+
+**Ключевые свойства java.time:**
+- **Immutable** — все классы неизменяемы, thread-safe
+- `plus/minus` возвращают новый объект
+- Интегрируется с Hibernate, Spring через `@CreationTimestamp`, конвертеры
+
+**Глубже — что важно знать
 
 **Java 8 vs 11 — лицензия Oracle JDK:** с Java 11 Oracle JDK требует коммерческой лицензии для production. В production используют OpenJDK (Temurin/Eclipse Adoptium, Amazon Corretto, Azul Zulu) — бесплатные дистрибутивы.
 
@@ -175,6 +214,9 @@ Map<String, Integer> map = Map.of("a", 1, "b", 2);
 | `repeat()` | Java 11 | `"ab".repeat(3)` → "ababab" |
 | `List.of()` | Java 9 | Immutable factory method |
 | Modules | Java 9 | `module-info.java` |
+| `LocalDate/LocalDateTime` | Java 8 | `LocalDate.now()`, immutable |
+| `ZonedDateTime` | Java 8 | Дата+время+зона |
+| `DateTimeFormatter` | Java 8 | `ofPattern("dd.MM.yyyy")` |
 
 **Связи:**
 - [[Stream API]]

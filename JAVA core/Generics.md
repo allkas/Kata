@@ -105,6 +105,48 @@ class TypedBox<T> {
 TypedBox<String> box = new TypedBox<>(String.class);
 ```
 
+### Raw types — сырые типы:
+
+```java
+// Raw type — дженерик без параметра типа
+List rawList = new ArrayList();   // raw type
+List<String> typedList = rawList; // warning: unchecked assignment
+
+// Diamond operator <> — пустой, тип выводится из контекста
+List<String> list = new ArrayList<>(); // компилятор знает тип из левой части
+```
+Raw types существуют для совместимости с кодом до Java 5. В новом коде не использовать — теряем type safety.
+
+### Инвариантность дженериков vs ковариантность массивов:
+
+```java
+// Массивы — КОВАРИАНТНЫ: если A extends B, то A[] extends B[]
+Object[] objects = new String[5];  // компилируется
+objects[0] = 42;                   // ArrayStoreException в runtime!
+
+// Дженерики — ИНВАРИАНТНЫ: List<String> НЕ является List<Object>
+List<Object> list = new ArrayList<String>(); // ОШИБКА КОМПИЛЯЦИИ
+// Решение — wildcard:
+List<? extends Object> list2 = new ArrayList<String>(); // OK
+```
+Массивы проверяют тип в runtime → `ArrayStoreException`. Дженерики проверяют в compile-time → безопаснее.
+
+### Generics в исключениях — что можно, что нельзя:
+
+```java
+// МОЖНО: throws generic-тип (T должен extends Throwable)
+<T extends Throwable> void process(T error) throws T { throw error; }
+
+// НЕЛЬЗЯ: параметризовать класс-исключение
+class MyException<T> extends Exception {} // ОШИБКА: generic class may not extend Throwable
+
+// НЕЛЬЗЯ: catch с generic-типом
+catch (T e) {} // ОШИБКА — тип стирается, нельзя перехватить по неизвестному типу
+
+// МОЖНО: реализовывать generic-интерфейс (например Comparable)
+class MyException extends Exception implements Comparable<MyException> { ... }
+```
+
 ## 5. Связи с другими концепциями
 
 - [[Устройство HashMap]] — HashMap параметризован `<K, V>`
@@ -131,6 +173,9 @@ TypedBox<String> box = new TypedBox<>(String.class);
 | `? super T` | T и надтипы (Consumer) | `get()` → только Object |
 | **Type erasure** | T стирается в runtime | Нет `new T()`, нет `instanceof List<String>` |
 | **PECS** | Producer=Extends, Consumer=Super | Мнемоника для wildcards |
+| **Raw type** | `List` без `<T>` | Потеря type safety, только для legacy |
+| **Инвариантность** | `List<Dog>` ≠ `List<Animal>` | В отличие от ковариантных массивов |
+| **Generics в exceptions** | throws T — можно, catch T — нельзя | Стирание типов делает catch бессмысленным |
 
 **Связи:**
 - [[Устройство HashMap]]

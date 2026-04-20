@@ -16,10 +16,14 @@
                 "id": "44bc09673c9b6e07",
                 "type": "leaf",
                 "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Граф"
+                  "type": "markdown",
+                  "state": {
+                    "file": "2 Базы данных MOC.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "2 Базы данных MOC"
                 }
               }
             ],
@@ -246,16 +250,21 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "log.md.tmp.16324.1776705417299",
+    "JAVA core/Отличия Java 8 и Java 11.md.tmp.16324.1776705399108",
+    "JAVA core/Отличия Java 8 и Java 11.md.tmp.16324.1776705393650",
+    "JAVA core/Stream API.md.tmp.16324.1776705381841",
+    "JAVA core/Stream API.md.tmp.16324.1776705370754",
+    "JAVA core/Устройство HashMap.md.tmp.16324.1776705346600",
+    "JAVA core/Устройство HashMap.md.tmp.16324.1776705342929",
+    "JAVA core/Устройство HashMap.md.tmp.16324.1776705338195",
+    "JAVA core/Устройство HashMap.md.tmp.16324.1776705332993",
+    "JAVA core/ArrayList vs LinkedList.md.tmp.16324.1776705312491",
+    "JAVA core/ArrayList vs LinkedList.md.tmp.16324.1776705295530",
     "Spring/Spring Boot.md",
-    "1 Java Core MOC.md.tmp.16324.1776694146241",
-    "JAVA core/Основы ООП.md.tmp.16324.1776694047428",
-    "JAVA core/Основы ООП.md.tmp.16324.1776694046350",
-    "JAVA core/Основы ООП.md.tmp.16324.1776694026646",
-    "JAVA core/Основы ООП.md.tmp.16324.1776694026609",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
     "JAVA core/JVM устройство ClassLoader.md",
-    "JAVA core/JVM устройство ClassLoader.md.tmp.16324.1776693347081",
     "JAVA core/Примитивные типы и обёртки.md",
     "3 Spring MOC.md",
     "Spring Core IoC DI.md",
@@ -277,10 +286,6 @@
     "6 DevOps И ИНФРАСТУКТУРА.md",
     "Микросервисы/Разница HTTP методов.md",
     "5 Инструменты MOC.md",
-    "Без названия.canvas",
-    "Без названия.base",
-    "index.md.tmp.14120.1776164358291",
-    "log.md.tmp.14120.1776162518286",
-    "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
+    "Без названия.canvas"
   ]
 }

@@ -133,9 +133,74 @@ Stream — одноразовый. Создавать из источника з
 ```java
 list.parallelStream()
     .filter(...)
-    .collect(toList()); // ForkJoinPool, осторожно с порядком и стейтом
+    .collect(toList()); // ForkJoinPool.commonPool()
 ```
-Использовать только для CPU-intensive задач с большими коллекциями. Не для IO, не для shared mutable state.
+**Когда использовать:** только CPU-intensive операции над большими коллекциями. Не для IO, не для shared mutable state.
+
+**Почему осторожно:** все параллельные стримы JVM используют **один общий** `ForkJoinPool.commonPool()`. Долгие операции (DB-запросы, HTTP) заблокируют пул для всего приложения. Для долгих операций — отдельный `ExecutorService`.
+
+```java
+// Можно явно переключаться:
+stream.parallel()    // сделать параллельным
+stream.sequential()  // обратно последовательным
+
+// Порядок в parallelStream не гарантирован!
+// forEachOrdered() — сохраняет порядок, но снижает параллелизм
+```
+
+### IntStream, LongStream, DoubleStream — примитивные стримы:
+```java
+// Зачем нужны: обычный Stream<T> — только объекты → autoboxing/unboxing
+// IntStream работает с int напрямую, без накладных расходов
+
+IntStream.range(1, 5)            // 1, 2, 3, 4 (не включая 5)
+IntStream.rangeClosed(1, 5)      // 1, 2, 3, 4, 5 (включая 5)
+IntStream.of(1, 3, 5)
+
+// Специальные терминальные методы только у числовых стримов:
+IntStream.of(1, 2, 3, 4, 5)
+    .sum()    // 15
+    .average() // OptionalDouble(3.0)
+    .min()     // OptionalInt(1)
+    .max()     // OptionalInt(5)
+    .count()   // 5
+
+// Преобразование:
+Stream<String> stream = ...;
+stream.mapToInt(String::length)    // Stream<String> → IntStream
+      .boxed()                      // IntStream → Stream<Integer>
+
+// IntStream → обычный стрим:
+IntStream.range(0, 5).mapToObj(i -> "item_" + i).collect(toList());
+```
+Аналогичны `LongStream` и `DoubleStream`. Для `byte`, `short`, `float` специализированных стримов нет.
+
+### Collectors — основные методы:
+```java
+// Сбор в коллекцию
+.collect(Collectors.toList())
+.collect(Collectors.toSet())
+.collect(Collectors.toUnmodifiableList())  // Java 10
+
+// Группировка
+.collect(Collectors.groupingBy(User::getDepartment))
+// → Map<String, List<User>>
+
+.collect(Collectors.groupingBy(User::getDepartment, Collectors.counting()))
+// → Map<String, Long>
+
+// Разбивка по условию
+.collect(Collectors.partitioningBy(u -> u.getAge() >= 18))
+// → Map<Boolean, List<User>>
+
+// Слияние строк
+.collect(Collectors.joining(", "))
+.collect(Collectors.joining(", ", "[", "]")) // "[a, b, c]"
+
+// Статистика
+.collect(Collectors.summarizingInt(User::getAge))
+// → IntSummaryStatistics: count, sum, min, max, average
+```
 
 ## 5. Связи с другими концепциями
 
@@ -167,6 +232,10 @@ list.parallelStream()
 | **Lazy** | Промежуточные не выполняются | До вызова terminal |
 | **One-time** | Повторное использование | `IllegalStateException` |
 | **Optional** | Для return value | `orElse`, `map`, `orElseThrow` |
+| **IntStream** | Без autoboxing | `range()`, `sum()`, `average()` |
+| **parallelStream** | ForkJoinPool.commonPool() | Только CPU-intensive, не IO |
+| **groupingBy** | Collector | `Map<K, List<T>>` |
+| **joining** | Collector | `"[a, b, c]"` |
 
 **Связи:**
 - [[Generics]]

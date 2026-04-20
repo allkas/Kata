@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -v \"^C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\all\\\\\\\\\\\\\\\\OneDrive\\\\\\\\\\\\\\\\Desktop\\\\\\\\\\\\\\\\Kata/[^/]*$\")"
+      "Bash(grep -v \"^C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\all\\\\\\\\\\\\\\\\OneDrive\\\\\\\\\\\\\\\\Desktop\\\\\\\\\\\\\\\\Kata/[^/]*$\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

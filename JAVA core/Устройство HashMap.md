@@ -58,7 +58,75 @@ HashMap<K, V>
 - Все элементы пересчитывают позицию — O(n)
 - Амортизированно редко → O(1) для `put` в среднем
 
-## 4. Глубже — null и сравнение коллекций
+## 4. Глубже — нюансы и WeakHashMap
+
+### Collection vs Collections — частый вопрос на собесе:
+- `java.util.Collection` — **интерфейс**, корень иерархии коллекций (`List`, `Set` его реализуют). Методы: `add()`, `remove()`, `size()`, `isEmpty()`.
+- `java.util.Collections` — **утилитный класс** (utility class), состоит из статических методов: `Collections.sort()`, `Collections.unmodifiableList()`, `Collections.synchronizedList()`, `Collections.shuffle()`.
+
+```java
+// Collection — интерфейс
+Collection<String> c = new ArrayList<>();
+c.add("a"); c.remove("a");
+
+// Collections — класс
+List<Integer> nums = Arrays.asList(3, 1, 2);
+Collections.sort(nums);        // сортировка
+Collections.reverse(nums);     // разворот
+Collections.shuffle(nums);     // перемешать
+List<Integer> immutable = Collections.unmodifiableList(nums); // обёртка read-only
+```
+
+### WeakHashMap — и типы ссылок в Java:
+
+Java имеет 4 типа ссылок:
+| Тип | Класс | GC собирает когда |
+|-----|-------|-------------------|
+| **Strong** | обычная переменная | Никогда (пока есть ссылка) |
+| **Soft** | `SoftReference<T>` | Нехватка памяти |
+| **Weak** | `WeakReference<T>` | При первой же GC-итерации |
+| **Phantom** | `PhantomReference<T>` | После финализации (мониторинг) |
+
+`WeakHashMap` использует `WeakReference` для **ключей**. Когда на ключ нет других сильных ссылок — запись автоматически удаляется GC.
+
+```java
+WeakHashMap<Object, String> map = new WeakHashMap<>();
+Object key = new Object();
+map.put(key, "value");
+System.out.println(map.size()); // 1
+
+key = null;            // единственная сильная ссылка потеряна
+System.gc();           // подсказка GC
+System.out.println(map.size()); // 0 — запись исчезла!
+```
+
+**Типичный use case:** кэш, где записи должны исчезать когда объект-ключ больше не используется (без ручного управления).
+
+### Почему нельзя использовать byte[] как ключ в HashMap:
+
+```java
+byte[] key1 = {1, 2, 3};
+byte[] key2 = {1, 2, 3};
+
+Map<byte[], String> map = new HashMap<>();
+map.put(key1, "value");
+map.get(key2); // null — не найдёт!
+```
+Проблема: массивы не переопределяют `hashCode()` и `equals()`. Оба метода унаследованы от `Object` и работают по **ссылке**, а не по содержимому. Решение: использовать `List<Byte>` или строковое представление.
+
+### Почему HashMap выродится в список при одинаковых hashCode():
+
+```java
+// Плохая хеш-функция — всё в один бакет
+class BadKey {
+    @Override public int hashCode() { return 1; } // всегда 1!
+    @Override public boolean equals(Object o) { ... }
+}
+// put O(1) → O(n); get O(1) → O(n)
+```
+С Java 8: если len > 8 и capacity >= 64 → treeify → O(log n). Но всё равно хуже O(1).
+
+## 5. Глубже — null и сравнение коллекций
 
 ### Null-ключи:
 | Коллекция | null-ключ | null-значение |
@@ -98,13 +166,14 @@ TreeMap<Person, String> map = new TreeMap<>(
 );
 ```
 
-## 5. Связи с другими концепциями
+## 6. Связи с другими концепциями
 
 - [[Контракт equals и hashCode]] — HashMap полностью зависит от корректной реализации обоих методов
 - [[Generics]] — HashMap параметризован `<K, V>`
-- [[ArrayList vs LinkedList]] — сравнение структур данных
+- [[ArrayList vs LinkedList]] — сравнение структур данных, fail-fast итераторы
+- [[Garbage Collector JVM]] — WeakHashMap и жизненный цикл объектов связаны с GC
 
-## 6. Ответ на собесе (2 минуты)
+## 7. Ответ на собесе (2 минуты)
 
 > "HashMap внутри — это массив бакетов (по умолчанию 16). При `put(key, value)` вычисляется `hashCode()` ключа, из него получается индекс бакета. Если бакет пустой — вставляем. Если нет (коллизия) — проходим по цепочке и сравниваем через `equals()`.
 >
@@ -116,7 +185,7 @@ TreeMap<Person, String> map = new TreeMap<>(
 >
 > **Сложность:** O(1) в среднем для put/get/remove. O(n) в теоретическом худшем случае (все коллизии), O(log n) в реальном худшем с Java 8."
 
-## Шпаргалка
+## 8. Шпаргалка
 
 | Концепция | Значение | Зачем |
 |-----------|----------|-------|
@@ -129,7 +198,23 @@ TreeMap<Person, String> map = new TreeMap<>(
 | **LinkedHashMap** | O(1) + порядок вставки | LRU-кэш |
 | **TreeMap** | O(log n) + сортировка | Диапазонные запросы |
 
+**Collection vs Collections:**
+| | `Collection` | `Collections` |
+|---|---|---|
+| **Тип** | Интерфейс | Утилитный класс |
+| **Назначение** | Корень иерархии коллекций | Статические методы для коллекций |
+| **Примеры** | `List`, `Set` реализуют | `sort()`, `shuffle()`, `unmodifiableList()` |
+
+**WeakHashMap:**
+| Тип ссылки | Когда GC собирает |
+|---|---|
+| Strong | Никогда (пока есть ссылка) |
+| Soft | При нехватке памяти |
+| Weak (`WeakHashMap`) | При первой же GC-итерации |
+| Phantom | После финализации |
+
 **Связи:**
 - [[Контракт equals и hashCode]]
 - [[Generics]]
 - [[ArrayList vs LinkedList]]
+- [[Garbage Collector JVM]]

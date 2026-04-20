@@ -2,6 +2,19 @@
 
 ---
 
+## [2026-04-20] ingest | CORE-2 Вопросы технических собеседований (Generics, Collections, Stream API, Java 8)
+
+**Источник:** `методички по java/Сore-2.docx`
+
+**Обновлены существующие страницы:**
+- `JAVA core/Generics` — добавлены: raw types, diamond operator, инвариантность дженериков vs ковариантность массивов (`ArrayStoreException`), generics в исключениях (что можно/нельзя)
+- `JAVA core/ArrayList vs LinkedList` — добавлены: fail-fast/fail-safe итераторы, `ConcurrentModificationException`, способы безопасного удаления при итерации, Iterator vs Enumeration, Comparable vs Comparator
+- `JAVA core/Устройство HashMap` — добавлены: Collection vs Collections, WeakHashMap + 4 типа ссылок (Strong/Soft/Weak/Phantom), почему byte[] нельзя использовать как ключ, вырождение в список при одинаковых hashCode
+- `JAVA core/Stream API` — добавлены: parallel streams с предупреждением о ForkJoinPool.commonPool(), IntStream/LongStream/DoubleStream (без autoboxing), Collectors детально (groupingBy, partitioningBy, joining, summarizingInt)
+- `JAVA core/Отличия Java 8 и Java 11` — добавлен полный раздел Date/Time API: LocalDate/LocalTime/LocalDateTime/ZonedDateTime, Period/Duration, DateTimeFormatter
+
+---
+
 ## [2026-04-20] ingest | CORE-1 Вопросы технических собеседований (ООП, Java internals, примитивы, сериализация)
 
 **Источник:** `raw/CORE 1 Вопросы технических собеседований.pdf`

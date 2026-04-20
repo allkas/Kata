@@ -93,6 +93,49 @@ public class OrderNotFoundException extends RuntimeException {
 
 ## 4. Глубже — важные нюансы
 
+### ExceptionInInitializerError — исключения в static-блоках:
+
+```java
+class Config {
+    static final String VALUE;
+
+    static {
+        // Если здесь выброшено исключение — класс не инициализируется
+        VALUE = loadFromFile(); // может бросить RuntimeException
+    }
+
+    static String loadFromFile() {
+        throw new RuntimeException("Config file not found");
+    }
+}
+
+// При первом обращении к классу:
+Config.VALUE; // ExceptionInInitializerError: caused by RuntimeException
+
+// При последующих обращениях:
+Config.VALUE; // NoClassDefFoundError: Config (Could not initialize class)
+```
+
+**Почему:** JVM помечает класс как «не инициализированный» навсегда. Класс нельзя использовать до перезапуска JVM. Это `Error`, не `Exception` — не ловим.
+
+### Suppressed exceptions в try-with-resources:
+
+```java
+try (Resource r = new Resource()) {
+    throw new RuntimeException("primary"); // первичное
+    // r.close() тоже бросает: IOException("close failed")
+}
+// Итог: поймаем RuntimeException("primary")
+// IOException добавлена как suppressed: primary.getSuppressed()[0]
+
+catch (RuntimeException e) {
+    System.out.println(e.getMessage());              // "primary"
+    System.out.println(e.getSuppressed()[0]);        // IOException("close failed")
+}
+```
+
+До `try-with-resources` (Java 6): если `finally` бросал исключение — оригинальное исключение из `try` **терялось**. `try-with-resources` решает это через suppressed exceptions.
+
 **`return` в `finally` перекрывает `return` из `try`:**
 ```java
 int test() {

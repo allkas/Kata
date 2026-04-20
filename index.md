@@ -28,6 +28,10 @@ tags: [index, system]
 | [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy                            |
 | [[Алгоритмы на собесе]]              | Live coding: HashMap-задачи, два указателя, рекурсия, Big O                                       |
 | [[Garbage Collector JVM]]            | GC-алгоритмы, поколения, паузы                                                                    |
+| [[JVM устройство ClassLoader]]       | JDK/JRE/JVM иерархия, байткод, ClassLoader типы и принципы, JIT                                  |
+| [[Stack vs Heap память]]             | Сравнение областей памяти, фреймы вызовов, ошибки OOM/SOE, Metaspace                             |
+| [[Примитивные типы и обёртки]]       | 8 типов, autoboxing, Integer pool -128..127, widening/narrowing casting                            |
+| [[Сериализация в Java]]              | Serializable, transient, serialVersionUID, Externalizable, shallow/deep clone                     |
 | [[Отличия Java 8 и Java 11]]         | var, HTTP Client, String API, Collection.of(), модули                                             |
 
 ---

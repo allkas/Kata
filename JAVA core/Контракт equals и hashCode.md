@@ -48,6 +48,46 @@ public int hashCode() {
 
 ## 4. Глубже — важные случаи
 
+### Почему в hashCode используется множитель 31:
+
+```java
+// Objects.hash() внутри делает примерно это:
+int result = 1;
+result = 31 * result + field1.hashCode();
+result = 31 * result + field2.hashCode();
+```
+
+**Почему 31:** нечётное простое число. Умножение на нечётное не теряет биты (в отличие от чётных). JIT-компилятор оптимизирует `31 * x` → `(x << 5) - x` (битовый сдвиг быстрее умножения). Простое число уменьшает коллизии за счёт лучшего распределения.
+
+### getClass() vs instanceof в equals:
+
+```java
+// Вариант 1: getClass() — строгое сравнение класса
+@Override
+public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false; // только точный класс
+    Person p = (Person) o;
+    return age == p.age && Objects.equals(name, p.name);
+}
+
+// Вариант 2: instanceof — допускает подклассы
+@Override
+public boolean equals(Object o) {
+    if (!(o instanceof Person)) return false; // Person и его подклассы
+    Person p = (Person) o;
+    return age == p.age && Objects.equals(name, p.name);
+}
+```
+
+| | `getClass()` | `instanceof` |
+|--|--------------|-------------|
+| **Симметричность** | Гарантирована | Нарушается при смешивании классов |
+| **Подклассы** | Не равны родителю | Могут быть равны |
+| **Рекомендация** | Для конечных классов | Только если класс final или subclass не переопределяет equals |
+
+Джошуа Блох рекомендует `instanceof` + финальный класс или явная проверка на подкласс. **Симметричность:** `a.equals(b) == b.equals(a)` — обязательное свойство контракта `equals`.
+
 ### Если hashCode() всегда возвращает одно число:
 ```java
 @Override public int hashCode() { return 42; } // антипаттерн!

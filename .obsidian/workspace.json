@@ -10,19 +10,16 @@
           {
             "id": "f289120b9df83bf2",
             "type": "tabs",
+            "dimension": 73.69565217391305,
             "children": [
               {
                 "id": "44bc09673c9b6e07",
                 "type": "leaf",
                 "state": {
-                  "type": "split-diff-view",
-                  "state": {
-                    "aFile": ".obsidian/workspace.json",
-                    "bFile": ".obsidian/workspace.json",
-                    "aRef": ""
-                  },
-                  "icon": "diff",
-                  "title": "Diff: workspace.json  (Working Tree)"
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Граф"
                 }
               }
             ],
@@ -31,6 +28,7 @@
           {
             "id": "25834bf65941c17e",
             "type": "tabs",
+            "dimension": 26.304347826086953,
             "children": [
               {
                 "id": "18307bd3e02f2651",
@@ -69,7 +67,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: Выбрать ⠐ Продолжить создание базы знаний"
+                  "title": "Terminal: ⠂ Продолжить создание базы знаний"
                 }
               }
             ]
@@ -249,6 +247,11 @@
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
     "Spring/Spring Boot.md",
+    "1 Java Core MOC.md.tmp.16324.1776694146241",
+    "JAVA core/Основы ООП.md.tmp.16324.1776694047428",
+    "JAVA core/Основы ООП.md.tmp.16324.1776694046350",
+    "JAVA core/Основы ООП.md.tmp.16324.1776694026646",
+    "JAVA core/Основы ООП.md.tmp.16324.1776694026609",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
     "JAVA core/JVM устройство ClassLoader.md",
@@ -274,7 +277,6 @@
     "6 DevOps И ИНФРАСТУКТУРА.md",
     "Микросервисы/Разница HTTP методов.md",
     "5 Инструменты MOC.md",
-    "Devops/Git merge rebase.md",
     "Без названия.canvas",
     "Без названия.base",
     "index.md.tmp.14120.1776164358291",

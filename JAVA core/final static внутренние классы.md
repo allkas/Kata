@@ -116,7 +116,108 @@ Runnable r = new Runnable() {
 // В современном Java заменяется лямбдой: () -> System.out.println("hello")
 ```
 
-## 6. Глубже — нюансы
+## 6. Sealed классы (Java 15+) и Enum
+
+### Sealed classes — контроль иерархии:
+
+```java
+// Только перечисленные классы могут расширять Shape
+public sealed class Shape permits Circle, Rectangle, Triangle { }
+
+public final class Circle extends Shape { double radius; }
+public final class Rectangle extends Shape { double width, height; }
+public non-sealed class Triangle extends Shape { } // Triangle снова открыт
+
+// С switch (Java 17+, pattern matching):
+double area = switch (shape) {
+    case Circle c    -> Math.PI * c.radius * c.radius;
+    case Rectangle r -> r.width * r.height;
+    case Triangle t  -> computeTriangleArea(t);
+};
+// Компилятор гарантирует полноту — не нужен default
+```
+
+Модификаторы для подклассов: `final` (нельзя расширять), `sealed` (снова запечатан), `non-sealed` (открыт для всех).
+
+### Enum — API и возможности:
+
+```java
+public enum Status {
+    ACTIVE("Активен"), INACTIVE("Неактивен"), DELETED("Удалён");
+
+    private final String displayName;
+
+    Status(String displayName) {
+        this.displayName = displayName; // конструктор — всегда private
+    }
+
+    public String getDisplayName() { return displayName; }
+}
+
+// Встроенные методы:
+Status s = Status.ACTIVE;
+s.name();        // "ACTIVE"   — имя константы
+s.ordinal();     // 0          — порядковый номер (с 0)
+s.toString();    // "ACTIVE"   — по умолчанию = name()
+
+Status.values();                     // Status[] — все константы
+Status.valueOf("INACTIVE");          // Status.INACTIVE — по имени
+
+// Enum в switch:
+switch (status) {
+    case ACTIVE   -> process();
+    case DELETED  -> throw new IllegalStateException();
+}
+```
+
+Enum наследует `java.lang.Enum`, является `final` — нельзя наследовать.
+
+### Порядок инициализации:
+
+```java
+class Parent {
+    static { System.out.println("1. Parent static block"); }
+    { System.out.println("3. Parent instance block"); }
+    Parent() { System.out.println("4. Parent constructor"); }
+}
+
+class Child extends Parent {
+    static { System.out.println("2. Child static block"); }
+    { System.out.println("5. Child instance block"); }
+    Child() { System.out.println("6. Child constructor"); }
+}
+
+new Child();
+// Вывод:
+// 1. Parent static block   (статика родителя — один раз при загрузке класса)
+// 2. Child static block    (статика потомка — один раз)
+// 3. Parent instance block (нестатика родителя — при каждом new)
+// 4. Parent constructor
+// 5. Child instance block
+// 6. Child constructor
+```
+
+### Типы конструкторов:
+
+| Тип | Когда создаётся | Пример |
+|-----|----------------|--------|
+| **Default** | Компилятор генерирует автоматически, если нет явных | `class User {}` → `User()` |
+| **Parameterized** | Явно объявлен с параметрами | `User(String name, int age)` |
+| **Copy constructor** | Принимает объект того же типа | `User(User other)` |
+
+```java
+class User {
+    String name; int age;
+
+    // Parameterized
+    User(String name, int age) { this.name = name; this.age = age; }
+
+    // Copy constructor (вместо clone())
+    User(User other) { this.name = other.name; this.age = other.age; }
+}
+```
+
+## 7. Глубже — нюансы
 
 ### final поле vs final переменная:
 ```java
@@ -172,14 +273,14 @@ class User {
 User user = new User.Builder().name("Alice").email("alice@example.com").build();
 ```
 
-## 7. Связи с другими концепциями
+## 8. Связи с другими концепциями
 
 - [[Основы ООП]] — override vs hide static методов
 - [[Иммутабельность String]] — `final class` как гарантия неизменности
 - [[Интерфейс vs абстрактный класс]] — `default` и `static` методы в интерфейсах
 - [[Generics]] — `static` методы в generic-классах не видят тип T
 
-## 8. Ответ на собесе (2 минуты)
+## 9. Ответ на собесе (2 минуты)
 
 > "`final` — три применения: `final class` нельзя наследовать (String, Integer), `final method` нельзя переопределить, `final variable` нельзя переприсвоить — но мутировать содержимое объекта можно.
 >

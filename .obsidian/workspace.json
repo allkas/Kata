@@ -16,14 +16,10 @@
                 "id": "44bc09673c9b6e07",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "2 Базы данных MOC.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "2 Базы данных MOC"
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Граф"
                 }
               }
             ],
@@ -250,6 +246,12 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "Spring/Spring Security.md",
+    "Spring/Жизненный цикл Spring бина.md",
+    "Spring/Spring Core IoC DI.md",
+    "Spring/Spring Core IoC DI.md.tmp.16324.1776706492173",
+    "index.md",
+    "2 Базы данных MOC.md",
     "JAVA core/java.util.concurrent.md",
     "JAVA core/Многопоточность основы.md.tmp.16324.1776705898349",
     "log.md.tmp.16324.1776705417299",
@@ -260,7 +262,6 @@
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705346600",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705342929",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705338195",
-    "JAVA core/Устройство HashMap.md.tmp.16324.1776705332993",
     "Spring/Spring Boot.md",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
@@ -269,7 +270,6 @@
     "3 Spring MOC.md",
     "Spring Core IoC DI.md",
     "Spring/7.md",
-    "index.md",
     "JAVA core/Устройство HashMap.md",
     "1 Java Core MOC.md",
     "JAVA core/Контракт equals и hashCode.md",
@@ -281,11 +281,7 @@
     "log.md",
     "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
     "JAVA core/SQL индексы JOIN нормализация.md",
-    "2 Базы данных MOC.md",
     "ИНФРАСТУКТУРА/Docker vs VM.md",
-    "6 DevOps И ИНФРАСТУКТУРА.md",
-    "Микросервисы/Разница HTTP методов.md",
-    "5 Инструменты MOC.md",
     "Без названия.canvas"
   ]
 }

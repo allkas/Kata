@@ -4,13 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "269f99a59bc0659a",
+        "id": "715c258d624a5f52",
         "type": "split",
         "children": [
           {
             "id": "f289120b9df83bf2",
             "type": "tabs",
-            "dimension": 79.16666666666666,
             "children": [
               {
                 "id": "44bc09673c9b6e07",
@@ -30,12 +29,11 @@
             "stacked": true
           },
           {
-            "id": "4ba1153f6f73342f",
+            "id": "25834bf65941c17e",
             "type": "tabs",
-            "dimension": 20.833333333333336,
             "children": [
               {
-                "id": "e534e563cadac80f",
+                "id": "18307bd3e02f2651",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
@@ -71,132 +69,10 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: cmd"
-                }
-              },
-              {
-                "id": "da03b2bd1b73ad25",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "C:\\Users\\all\\OneDrive\\Desktop\\Kata",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "C:\\Windows\\System32\\cmd.exe",
-                        "followTheme": true,
-                        "name": "",
-                        "platforms": {
-                          "win32": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: cmd"
-                }
-              },
-              {
-                "id": "26d0343cbd9d898a",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "C:\\Users\\all\\OneDrive\\Desktop\\Kata",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "C:\\Windows\\System32\\cmd.exe",
-                        "followTheme": true,
-                        "name": "",
-                        "platforms": {
-                          "win32": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: cmd"
-                }
-              },
-              {
-                "id": "e33e2283c809a8b6",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "C:\\Users\\all\\OneDrive\\Desktop\\Kata",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "C:\\Windows\\System32\\cmd.exe",
-                        "followTheme": true,
-                        "name": "",
-                        "platforms": {
-                          "win32": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: cmd"
+                  "title": "Terminal: Выбрать ⠐ Продолжить создание базы знаний"
                 }
               }
-            ],
-            "currentTab": 3,
-            "stacked": true
+            ]
           }
         ],
         "direction": "horizontal"
@@ -371,8 +247,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "18307bd3e02f2651",
   "lastOpenFiles": [
+    "JAVA core/Сериализация в Java.md",
+    "JAVA core/Stack vs Heap память.md",
+    "JAVA core/JVM устройство ClassLoader.md",
+    "JAVA core/JVM устройство ClassLoader.md.tmp.16324.1776693347081",
+    "JAVA core/Примитивные типы и обёртки.md",
+    "Spring/Spring Boot.md",
     "3 Spring MOC.md",
     "Spring Core IoC DI.md",
     "Spring/7.md",
@@ -394,14 +276,9 @@
     "Микросервисы/Разница HTTP методов.md",
     "5 Инструменты MOC.md",
     "Devops/Git merge rebase.md",
-    "Devops/Maven жизненный цикл.md",
     "Без названия.canvas",
     "Без названия.base",
-    "00 Индекс всех тем.md",
-    "Микросервисы/Микросервисы vs монолит.md",
-    "4 Микросервисы MOC.md",
     "index.md.tmp.14120.1776164358291",
-    "JAVA core/Отличия Java 8 и Java 11.md",
     "log.md.tmp.14120.1776162518286",
     "JAVA core/Устройство HashMap.md.tmp.7044.1776082813782"
   ]

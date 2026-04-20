@@ -250,6 +250,8 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "JAVA core/java.util.concurrent.md",
+    "JAVA core/Многопоточность основы.md.tmp.16324.1776705898349",
     "log.md.tmp.16324.1776705417299",
     "JAVA core/Отличия Java 8 и Java 11.md.tmp.16324.1776705399108",
     "JAVA core/Отличия Java 8 и Java 11.md.tmp.16324.1776705393650",
@@ -259,8 +261,6 @@
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705342929",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705338195",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705332993",
-    "JAVA core/ArrayList vs LinkedList.md.tmp.16324.1776705312491",
-    "JAVA core/ArrayList vs LinkedList.md.tmp.16324.1776705295530",
     "Spring/Spring Boot.md",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",

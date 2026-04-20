@@ -2,6 +2,18 @@
 
 ---
 
+## [2026-04-20] ingest | Kata 32 вопроса по многопоточности (Java Multithreading)
+
+**Источник:** `3.pdf` (Kata academy, 58 страниц, 32 вопроса)
+
+**Обновлены существующие страницы:**
+- `JAVA core/Многопоточность основы` — кардинально расширена: Thread lifecycle (6 состояний + диаграмма), Process vs Thread, Monitor/mutex (synchronized static vs non-static), wait/notify/notifyAll + Producer-Consumer pattern, Semaphore, Starvation, Data Race vs Race Condition, 4 условия Coffman для deadlock, Daemon-потоки, Thread priority, join/sleep/yield/interrupt сравнение, interrupt() vs stop(), FutureTask
+
+**Созданы новые страницы:**
+- `JAVA core/java.util.concurrent` — ConcurrentHashMap (Java 7 vs 8), CopyOnWriteArrayList, BlockingQueue (4 реализации), ReentrantLock vs synchronized, ReadWriteLock, Condition, CountDownLatch, CyclicBarrier, Phaser, Exchanger, таблица выбора инструментов
+
+---
+
 ## [2026-04-20] ingest | CORE-2 Вопросы технических собеседований (Generics, Collections, Stream API, Java 8)
 
 **Источник:** `методички по java/Сore-2.docx`

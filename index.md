@@ -23,8 +23,9 @@ tags: [index, system]
 | [[Устройство HashMap]]               | Бакеты, коллизии, load factor, дерево; HashMap vs TreeMap vs LinkedHashMap; Set-коллекции         |
 | [[ArrayList vs LinkedList]]          | Структуры, Big O, расширение capacity, когда что выбирать                                         |
 | [[Stream API]]                       | map/flatMap, functional interfaces, Optional, lazy evaluation                                     |
-| [[Многопоточность основы]]           | volatile/synchronized/Atomic, deadlock/livelock/race condition, Runnable vs Callable, ThreadLocal |
+| [[Многопоточность основы]]           | Thread lifecycle, volatile/synchronized/Atomic, deadlock/livelock/starvation, Monitor, wait/notify, Semaphore, Daemon, interrupt |
 | [[CompletableFuture и пулы потоков]] | CompletableFuture цепочки, ExecutorService, ForkJoinPool                                          |
+| [[java.util.concurrent]]             | ConcurrentHashMap, CopyOnWriteArrayList, BlockingQueue, ReentrantLock, ReadWriteLock, CountDownLatch, CyclicBarrier, Phaser, Exchanger |
 | [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy                            |
 | [[Алгоритмы на собесе]]              | Live coding: HashMap-задачи, два указателя, рекурсия, Big O                                       |
 | [[Garbage Collector JVM]]            | GC-алгоритмы, поколения, паузы                                                                    |

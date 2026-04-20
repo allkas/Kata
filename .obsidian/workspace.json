@@ -15,14 +15,14 @@
                 "id": "44bc09673c9b6e07",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "split-diff-view",
                   "state": {
-                    "file": "Spring/Spring Boot.md",
-                    "mode": "preview",
-                    "source": false
+                    "aFile": ".obsidian/workspace.json",
+                    "bFile": ".obsidian/workspace.json",
+                    "aRef": ""
                   },
-                  "icon": "lucide-file",
-                  "title": "Spring Boot"
+                  "icon": "diff",
+                  "title": "Diff: workspace.json  (Working Tree)"
                 }
               }
             ],
@@ -231,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,14 +246,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "18307bd3e02f2651",
+  "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "Spring/Spring Boot.md",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
     "JAVA core/JVM устройство ClassLoader.md",
     "JAVA core/JVM устройство ClassLoader.md.tmp.16324.1776693347081",
     "JAVA core/Примитивные типы и обёртки.md",
-    "Spring/Spring Boot.md",
     "3 Spring MOC.md",
     "Spring Core IoC DI.md",
     "Spring/7.md",

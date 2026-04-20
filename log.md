@@ -2,6 +2,24 @@
 
 ---
 
+## [2026-04-20] ingest | CORE-1 Вопросы технических собеседований (ООП, Java internals, примитивы, сериализация)
+
+**Источник:** `raw/CORE 1 Вопросы технических собеседований.pdf`
+
+**Созданы новые страницы:**
+- `JAVA core/Примитивные типы и обёртки` — 8 типов, autoboxing, Integer Pool [-128..127], widening/narrowing, BigDecimal
+- `JAVA core/JVM устройство ClassLoader` — JDK/JRE/JVM иерархия, байткод, ClassLoader (Bootstrap/Extension/System), 3 принципа, JIT, dynamic loading
+- `JAVA core/Stack vs Heap память` — фреймы вызовов, сравнение областей памяти, StackOverflowError vs OOM, Metaspace, escape analysis
+- `JAVA core/Сериализация в Java` — Serializable, transient, serialVersionUID, Externalizable, shallow/deep clone, copy constructor
+
+**Обновлены существующие страницы:**
+- `JAVA core/Основы ООП` — добавлены: ассоциация/агрегация/композиция, принципы DRY/KISS/YAGNI
+- `JAVA core/Контракт equals и hashCode` — добавлены: почему множитель 31, getClass() vs instanceof
+- `JAVA core/Исключения в Java` — добавлены: ExceptionInInitializerError в static-блоках, детали suppressed exceptions
+- `JAVA core/final static внутренние классы` — добавлены: sealed classes (Java 15+), Enum API (name/ordinal/values), типы конструкторов, порядок инициализации
+
+---
+
 ## [2026-04-16] lint | Проверка всех файлов на наличие раздела "Ответ на собесе"
 
 **Проверено:** 68 файлов wiki.

@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Микросервисы/Распределённые транзакции саги.md",
+                    "file": "3 Spring MOC.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Распределённые транзакции саги"
+                  "title": "3 Spring MOC"
                 }
               }
             ],
@@ -71,7 +71,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: cmd"
+                  "title": "Terminal: ✳ Spring framework questions review"
                 }
               }
             ]
@@ -250,8 +250,16 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
-    "Микросервисы/Circuit Breaker.md",
+    "log.md.tmp.16956.1776753446715",
+    "Spring/Spring WebFlux.md",
+    "Spring/Spring WebFlux.md.tmp.16956.1776753414261",
+    "Spring/Spring Data Repository.md",
+    "Spring/Filters Interceptors Listeners.md",
+    "Spring/Spring MVC DispatcherServlet.md",
+    "Spring/Spring MVC DispatcherServlet.md.tmp.16956.1776753262329",
+    "Spring/@Transactional и Propagation.md",
     "Микросервисы/Распределённые транзакции саги.md",
+    "Микросервисы/Circuit Breaker.md",
     "Spring/Spring Boot.md",
     "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
     "Spring/Spring Security.md",
@@ -268,8 +276,6 @@
     "JAVA core/Stream API.md.tmp.16324.1776705381841",
     "JAVA core/Stream API.md.tmp.16324.1776705370754",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705346600",
-    "JAVA core/Устройство HashMap.md.tmp.16324.1776705342929",
-    "JAVA core/Устройство HashMap.md.tmp.16324.1776705338195",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
     "JAVA core/JVM устройство ClassLoader.md",
@@ -280,12 +286,6 @@
     "JAVA core/Устройство HashMap.md",
     "1 Java Core MOC.md",
     "JAVA core/Контракт equals и hashCode.md",
-    "JAVA core/ArrayList vs LinkedList.md",
-    "JAVA core/Интерфейс vs абстрактный класс.md",
-    "JAVA core/Многопоточность основы.md",
-    "JAVA core/Stream API.md",
-    "JAVA core/CompletableFuture и пулы потоков.md",
-    "log.md",
     "Без названия.canvas"
   ]
 }

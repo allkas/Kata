@@ -2,6 +2,27 @@
 
 ---
 
+## [2026-04-21] ingest | Spring Framework & HTTP (4.pdf)
+
+**Источник:** `4.pdf` (Kata academy, 89 страниц — Spring Core, AOP, MVC, Security, Boot, Data, WebFlux, HTTP/REST)
+
+**Созданы новые страницы:**
+- `Spring/@Transactional и Propagation` — 7 уровней propagation, physical vs logical транзакции, rollback rules, self-invocation ловушка
+- `Spring/Spring MVC DispatcherServlet` — Front Controller pattern, поток обработки запроса, HandlerMapping, @Controller vs @RestController, ResponseEntity
+- `Spring/Filters Interceptors Listeners` — три уровня перехвата, порядок выполнения, OncePerRequestFilter, HandlerInterceptor, ApplicationEventPublisher
+- `Spring/Spring Data Repository` — иерархия интерфейсов, метод по именованию, @Query, Pageable, save() поведение
+- `Spring/Spring WebFlux` — Mono/Flux, операторы, backpressure, EventLoop/Netty, R2DBC, холодный vs горячий Publisher
+
+**Добавлены в index.md и MOC (существовали, но не были учтены):**
+- `Spring/Жизненный цикл Spring бина`
+- `Spring/Spring Security`
+
+**Обновлены:**
+- `index.md` — добавлены все 7 страниц в раздел Spring
+- `3 Spring MOC.md` — структурирован по разделам: Ядро, Транзакции и AOP, Web-слой, Security/Data/Boot, Реактивное
+
+---
+
 ## [2026-04-20] ingest | Kata 32 вопроса по многопоточности (Java Multithreading)
 
 **Источник:** `3.pdf` (Kata academy, 58 страниц, 32 вопроса)

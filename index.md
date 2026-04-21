@@ -41,9 +41,16 @@ tags: [index, system]
 
 | Страница | Описание |
 |----------|----------|
-| [[Spring Core IoC DI]] | Inversion of Control, Dependency Injection, контейнер |
-| [[Spring Boot]] | Auto-configuration, starter, embedded server |
-| [[Spring AOP]] | Aspect-oriented programming, pointcut, advice |
+| [[Spring Core IoC DI]] | Inversion of Control, Dependency Injection, BeanFactory, ApplicationContext, BeanPostProcessor |
+| [[Жизненный цикл Spring бина]] | 6 шагов lifecycle, Aware-интерфейсы, @PostConstruct/@PreDestroy, scopes |
+| [[Spring Boot]] | Auto-configuration, starters, embedded server, @SpringBootApplication |
+| [[Spring AOP]] | Aspect-oriented programming, JDK Proxy vs CGLIB, self-invocation ловушка |
+| [[Spring MVC DispatcherServlet]] | Front Controller, обработка запросов, HandlerMapping, @Controller vs @RestController |
+| [[Filters Interceptors Listeners]] | Servlet-фильтры, Spring Interceptors, ApplicationEventPublisher, порядок выполнения |
+| [[@Transactional и Propagation]] | Propagation levels (REQUIRED/REQUIRES_NEW/NESTED/...), rollback, physical vs logical |
+| [[Spring Security]] | Filter chain, аутентификация, UserDetailsService, SecurityContextHolder, JWT |
+| [[Spring Data Repository]] | Repository иерархия, @Query, метод по именованию, Pageable |
+| [[Spring WebFlux]] | Реактивное программирование, Flux/Mono, backpressure, EventLoop, R2DBC |
 | [[Spring MVC REST (Controller vs RestController)]] | Разница аннотаций, обработка запросов |
 | [[Глобальная обработка исключений в Spring]] | @ControllerAdvice, @ExceptionHandler |
 

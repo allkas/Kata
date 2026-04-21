@@ -2,6 +2,22 @@
 
 ---
 
+## [2026-04-21] ingest | Алгоритмы (1.pdf)
+
+**Источник:** `1.pdf` (Kata academy, 22 страницы — 14 тем по алгоритмам и структурам данных)
+
+**Созданы новые страницы:**
+- `JAVA core/Виды сортировок` — Bubble/Insertion/Selection/Shell/Merge/Quick/Heap/Counting/Timsort; Big O таблица; Arrays.sort() в Java (Dual-Pivot Quicksort vs Timsort)
+- `JAVA core/Бинарное дерево и красно-чёрное дерево` — BST инвариант, три вида обхода, BFS; 5 правил RB-tree; TreeMap/TreeSet/HashMap-бакеты
+- `JAVA core/Queue Deque Stack PriorityQueue` — Queue/Deque/Stack/PriorityQueue/EnumSet; ArrayDeque vs LinkedList; offer/poll/peek vs add/remove; Top-K паттерн
+- `JAVA core/Рекурсия и мемоизация` — базовый случай и шаг рекурсии, рекурсия vs итерация, мемоизация (top-down DP), bottom-up DP, жадный алгоритм
+
+**Обновлены:**
+- `index.md` — добавлены 4 новые страницы в Java Core
+- `1 Java Core MOC.md` — добавлены разделы "Структуры данных" и расширен "Паттерны и алгоритмы"
+
+---
+
 ## [2026-04-21] ingest | Spring Framework & HTTP (4.pdf)
 
 **Источник:** `4.pdf` (Kata academy, 89 страниц — Spring Core, AOP, MVC, Security, Boot, Data, WebFlux, HTTP/REST)

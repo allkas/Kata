@@ -28,6 +28,10 @@ tags: [index, system]
 | [[java.util.concurrent]]             | ConcurrentHashMap, CopyOnWriteArrayList, BlockingQueue, ReentrantLock, ReadWriteLock, CountDownLatch, CyclicBarrier, Phaser, Exchanger |
 | [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy                            |
 | [[Алгоритмы на собесе]]              | Live coding: HashMap-задачи, два указателя, рекурсия, Big O                                       |
+| [[Виды сортировок]]                  | Bubble/Insertion/Selection/Merge/Quick/Heapsort/Timsort; Big O сравнение; Arrays.sort() в Java    |
+| [[Рекурсия и мемоизация]]            | Базовый случай, шаг рекурсии, StackOverflow; мемоизация vs bottom-up DP; жадный алгоритм          |
+| [[Queue Deque Stack PriorityQueue]]  | FIFO/LIFO/приоритет; ArrayDeque vs LinkedList; EnumSet; offer/poll/peek vs add/remove/element     |
+| [[Бинарное дерево и красно-чёрное дерево]] | BST инвариант; in/pre/post-order обходы; 5 правил RB-tree; TreeMap, TreeSet, HashMap бакеты |
 | [[Garbage Collector JVM]]            | GC-алгоритмы, поколения, паузы                                                                    |
 | [[JVM устройство ClassLoader]]       | JDK/JRE/JVM иерархия, байткод, ClassLoader типы и принципы, JIT                                  |
 | [[Stack vs Heap память]]             | Сравнение областей памяти, фреймы вызовов, ошибки OOM/SOE, Metaspace                             |

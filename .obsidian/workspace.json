@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
+                    "file": "Микросервисы/Распределённые транзакции саги.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Вопросы работодателю — что сделать, чтобы вы не пожалели"
+                  "title": "Распределённые транзакции саги"
                 }
               }
             ],
@@ -71,7 +71,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Продолжить создание базы знаний"
+                  "title": "Terminal: cmd"
                 }
               }
             ]
@@ -250,6 +250,10 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "Микросервисы/Circuit Breaker.md",
+    "Микросервисы/Распределённые транзакции саги.md",
+    "Spring/Spring Boot.md",
+    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
     "Spring/Spring Security.md",
     "Spring/Жизненный цикл Spring бина.md",
     "Spring/Spring Core IoC DI.md",
@@ -266,7 +270,6 @@
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705346600",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705342929",
     "JAVA core/Устройство HashMap.md.tmp.16324.1776705338195",
-    "Spring/Spring Boot.md",
     "JAVA core/Сериализация в Java.md",
     "JAVA core/Stack vs Heap память.md",
     "JAVA core/JVM устройство ClassLoader.md",
@@ -283,9 +286,6 @@
     "JAVA core/Stream API.md",
     "JAVA core/CompletableFuture и пулы потоков.md",
     "log.md",
-    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
-    "JAVA core/SQL индексы JOIN нормализация.md",
-    "ИНФРАСТУКТУРА/Docker vs VM.md",
     "Без названия.canvas"
   ]
 }

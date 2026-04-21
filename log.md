@@ -2,6 +2,22 @@
 
 ---
 
+## [2026-04-21] ingest | Паттерны проектирования (2.pdf)
+
+**Источник:** `2.pdf` (GoF Design Patterns, антипаттерны, 60 страниц)
+
+**Обновлены страницы:**
+- `JAVA core/Паттерны проектирования` — добавлены: Adapter, Facade, Template Method, Chain of Responsibility; расширены таблицы "паттерны в Spring", шпаргалка, раздел "Частые ошибки"
+
+**Созданы новые страницы:**
+- `JAVA core/Антипаттерны` — God Object, Big Ball of Mud, Poltergeists, Singleton-антипаттерн, Introduced Complexity, Anemic Domain Model
+
+**Обновлены:**
+- `index.md` — обновлена строка Паттерны проектирования; добавлена Антипаттерны
+- `1 Java Core MOC.md` — добавлена Антипаттерны
+
+---
+
 ## [2026-04-21] ingest | Алгоритмы (1.pdf)
 
 **Источник:** `1.pdf` (Kata academy, 22 страницы — 14 тем по алгоритмам и структурам данных)

@@ -26,7 +26,8 @@ tags: [index, system]
 | [[Многопоточность основы]]           | Thread lifecycle, volatile/synchronized/Atomic, deadlock/livelock/starvation, Monitor, wait/notify, Semaphore, Daemon, interrupt |
 | [[CompletableFuture и пулы потоков]] | CompletableFuture цепочки, ExecutorService, ForkJoinPool                                          |
 | [[java.util.concurrent]]             | ConcurrentHashMap, CopyOnWriteArrayList, BlockingQueue, ReentrantLock, ReadWriteLock, CountDownLatch, CyclicBarrier, Phaser, Exchanger |
-| [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy                            |
+| [[Паттерны проектирования]]          | GoF: Singleton, Builder, Factory, Strategy, Observer, Decorator, Proxy, Adapter, Facade, Template Method, Chain of Responsibility |
+| [[Антипаттерны]]                     | God Object, Big Ball of Mud, Poltergeists, Singleton-антипаттерн, Anemic Domain Model            |
 | [[Алгоритмы на собесе]]              | Live coding: HashMap-задачи, два указателя, рекурсия, Big O                                       |
 | [[Виды сортировок]]                  | Bubble/Insertion/Selection/Merge/Quick/Heapsort/Timsort; Big O сравнение; Arrays.sort() в Java    |
 | [[Рекурсия и мемоизация]]            | Базовый случай, шаг рекурсии, StackOverflow; мемоизация vs bottom-up DP; жадный алгоритм          |

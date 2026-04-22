@@ -67,7 +67,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Spring framework questions review"
+                  "title": "Terminal: cmd"
                 }
               }
             ]
@@ -246,6 +246,11 @@
   },
   "active": "44bc09673c9b6e07",
   "lastOpenFiles": [
+    "БД/Проблема N+1 запросов.md",
+    "2 Базы данных MOC.md",
+    "БД/Транзакции уровни изоляции.md",
+    "JAVA core/SQL индексы JOIN нормализация.md",
+    "ИНФРАСТУКТУРА/Жизненный цикл Maven.md",
     "log.md.tmp.16956.1776756737148",
     "JAVA core/Антипаттерны.md",
     "1 Java Core MOC.md",
@@ -260,7 +265,6 @@
     "log.md",
     "JAVA core/Рекурсия и мемоизация.md",
     "JAVA core/Рекурсия и мемоизация.md.tmp.16956.1776753926003",
-    "БД/Транзакции уровни изоляции.md",
     "JAVA core/Queue Deque Stack PriorityQueue.md",
     "JAVA core/Queue Deque Stack PriorityQueue.md.tmp.16956.1776753869142",
     "JAVA core/Бинарное дерево и красно-чёрное дерево.md",
@@ -276,12 +280,8 @@
     "Spring/Spring Data Repository.md",
     "Spring/Filters Interceptors Listeners.md",
     "Spring/Spring MVC DispatcherServlet.md",
-    "Spring/Spring MVC DispatcherServlet.md.tmp.16956.1776753262329",
     "Spring/@Transactional и Propagation.md",
     "Микросервисы/Распределённые транзакции саги.md",
-    "Микросервисы/Circuit Breaker.md",
-    "Вопросы работодателю — что сделать, чтобы вы не пожалели.md",
-    "Spring/Spring Security.md",
     "Без названия.canvas"
   ]
 }

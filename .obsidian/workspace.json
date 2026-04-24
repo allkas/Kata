@@ -16,10 +16,14 @@
                 "id": "d1aa4ac5069f173f",
                 "type": "leaf",
                 "state": {
-                  "type": "graph",
-                  "state": {},
-                  "icon": "lucide-git-fork",
-                  "title": "Граф"
+                  "type": "markdown",
+                  "state": {
+                    "file": "Hexlet/Java Массивы/Синтаксис.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Синтаксис"
                 }
               }
             ],
@@ -67,7 +71,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ✳ Add Hexlet course materials to knowledge base"
+                  "title": "Terminal: ⠂ Add Hexlet course materials to knowledge base"
                 }
               }
             ]
@@ -247,6 +251,7 @@
   },
   "active": "d1aa4ac5069f173f",
   "lastOpenFiles": [
+    "Hexlet/Java Массивы/Java Массивы.md",
     "Hexlet/Java Maps/Введение.md",
     "Hexlet/Java Maps/Обход Map.md",
     "Hexlet/Hexlet — Общее.md",
@@ -273,7 +278,6 @@
     "Hexlet/JS — Функции/Испытания/NRZI кодирование.md",
     "Hexlet/JS — Функции/Испытания/Вертикальная гистограмма.md",
     "Hexlet/JS — Функции/Испытания/Валидатор IPv6.md",
-    "Hexlet/JS — Функции/Испытания/IP конвертер.md",
     "Hexlet/JS — Функции/Испытания",
     "Hexlet/JS — Функции",
     "Hexlet/JS — Разработка абстракций для асинхронности/Испытания",

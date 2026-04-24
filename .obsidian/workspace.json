@@ -67,7 +67,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠂ Add Hexlet course materials to knowledge base"
+                  "title": "Terminal: ✳ Add Hexlet course materials to knowledge base"
                 }
               }
             ]
@@ -247,6 +247,7 @@
   },
   "active": "d1aa4ac5069f173f",
   "lastOpenFiles": [
+    "hexlet_refactor.py",
     "Hexlet/Java Массивы/Java Массивы.md",
     "Hexlet/Java Массивы/Синтаксис.md",
     "Hexlet/Hexlet — Алгоритмы.md",
@@ -273,7 +274,6 @@
     "Hexlet/JS — Функции/Испытания/Конвертер цветов.md",
     "Hexlet/JS — Функции/Испытания/Одинаковая четность.md",
     "Hexlet/JS — Функции/Испытания/Горизонтальная гистограмма.md",
-    "Hexlet/JS — Функции/Испытания/Испытания JS — Функции.md",
     "Hexlet/JS — Функции/Испытания",
     "Hexlet/JS — Функции",
     "Hexlet/JS — Разработка абстракций для асинхронности/Испытания",

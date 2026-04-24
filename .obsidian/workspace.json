@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Hexlet/JS — React/Различия jsx и html_babel.md",
+                    "file": "Hexlet/Java Автоматическое тестирование/Введение.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Различия jsx и html_babel"
+                  "title": "Введение"
                 }
               },
               {
@@ -262,8 +262,10 @@
   },
   "active": "0516de59ff87b101",
   "lastOpenFiles": [
-    "Hexlet/Hexlet — JavaScript.md",
+    "Hexlet/Java JDBC — Работа с базой данных/Испытания/База автомобилей.md",
+    "Hexlet/Java Автоматическое тестирование/Введение.md",
     "Hexlet/JS — React/Различия jsx и html_babel.md",
+    "Hexlet/Hexlet — JavaScript.md",
     "hexlet_refactor.py",
     "Hexlet/Java Массивы/Java Массивы.md",
     "Hexlet/Java Массивы/Синтаксис.md",
@@ -288,8 +290,6 @@
     "Hexlet/JS — Функции/Испытания/Морской бой 2.md",
     "Hexlet/JS — Функции/Испытания/Парсинг конфигурации.md",
     "Hexlet/JS — Функции/Испытания/Конвертер цветов.md",
-    "Hexlet/JS — Функции/Испытания/Одинаковая четность.md",
-    "Hexlet/JS — Функции/Испытания/Горизонтальная гистограмма.md",
     "Hexlet/JS — Функции/Испытания",
     "Hexlet/JS — Функции",
     "Hexlet/JS — Разработка абстракций для асинхронности/Испытания",

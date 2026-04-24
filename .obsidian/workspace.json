@@ -25,8 +25,19 @@
                   "icon": "lucide-file",
                   "title": "Dockerfile и слои образа"
                 }
+              },
+              {
+                "id": "d1aa4ac5069f173f",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Граф"
+                }
               }
             ],
+            "currentTab": 1,
             "stacked": true
           },
           {
@@ -71,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: cmd"
+                  "title": "Terminal: ⠐ Add Hexlet course materials to knowledge base"
                 }
               }
             ]
@@ -130,8 +141,7 @@
               "title": "Закладки"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -249,8 +259,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "44bc09673c9b6e07",
+  "active": "1653258d21e0061c",
   "lastOpenFiles": [
+    "test_lesson.md",
     "подготовка к собесу по java/ИНФРАСТУКТУРА/Dockerfile и слои образа.md",
     "подготовка к собесу по java/00 Индекс всех тем.md",
     "Книги/по саморазвитию/raw",
@@ -286,7 +297,6 @@
     "подготовка к собесу по java/JAVA core/Queue Deque Stack PriorityQueue.md",
     "JAVA core/Queue Deque Stack PriorityQueue.md.tmp.16956.1776753869142",
     "подготовка к собесу по java/JAVA core/Бинарное дерево и красно-чёрное дерево.md",
-    "подготовка к собесу по java/JAVA core/Виды сортировок.md",
     "Без названия.canvas"
   ]
 }

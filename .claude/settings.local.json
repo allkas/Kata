@@ -3,7 +3,9 @@
     "allow": [
       "Bash(grep -v \"^C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\all\\\\\\\\\\\\\\\\OneDrive\\\\\\\\\\\\\\\\Desktop\\\\\\\\\\\\\\\\Kata/[^/]*$\")",
       "Bash(python3 -c ' *)",
-      "Bash(xargs wc *)"
+      "Bash(xargs wc *)",
+      "Bash(python3 *)",
+      "Bash(pip install *)"
     ]
   }
 }

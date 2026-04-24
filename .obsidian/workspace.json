@@ -18,12 +18,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Hexlet/Java Автоматическое тестирование/Введение.md",
+                    "file": "Hexlet/Java Дженерики/Как работают дженерики.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "Введение"
+                  "title": "Как работают дженерики"
                 }
               },
               {
@@ -41,7 +41,6 @@
                 }
               }
             ],
-            "currentTab": 1,
             "stacked": true
           },
           {
@@ -264,13 +263,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0516de59ff87b101",
+  "active": "d1aa4ac5069f173f",
   "lastOpenFiles": [
+    "Hexlet/Java Автоматическое тестирование/Введение.md",
+    "Hexlet/JS — Массивы/Вложенные массивы.md",
     "Hexlet/JS — Массивы/JS — Массивы.md",
     "Hexlet/JS — Массивы/Цикл for...of.md",
     "Hexlet/Hexlet — Общее.md",
     "Hexlet/Java JDBC — Работа с базой данных/Испытания/База автомобилей.md",
-    "Hexlet/Java Автоматическое тестирование/Введение.md",
     "Hexlet/JS — React/Различия jsx и html_babel.md",
     "Hexlet/Hexlet — JavaScript.md",
     "hexlet_refactor.py",
@@ -293,7 +293,6 @@
     "Hexlet/JS — Функции/Испытания/Слияние словарей.md",
     "Hexlet/JS — Функции/Испытания/Поиск ближайшего соседа.md",
     "Hexlet/JS — Функции/Испытания/Переворот строки.md",
-    "Hexlet/JS — Функции/Испытания/Морской бой 2.md",
     "Hexlet/JS — Функции/Испытания",
     "Hexlet/JS — Функции",
     "Hexlet/JS — Разработка абстракций для асинхронности/Испытания",

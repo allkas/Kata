@@ -40,3 +40,6 @@ source: Hexlet
 - [[Spring Boot]]
 - [[Spring Core IoC DI]]
 - [[Spring Data Repository]]
+
+## Испытания
+- [[Испытания Java Корпоративные приложения на Spring Boot]]

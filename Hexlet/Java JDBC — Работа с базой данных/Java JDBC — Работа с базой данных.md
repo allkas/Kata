@@ -15,3 +15,6 @@ source: Hexlet
 
 ## Связи с wiki
 - [[Spring Data Repository]]
+
+## Испытания
+- [[Испытания Java JDBC — Работа с базой данных]]

@@ -14,3 +14,6 @@ source: Hexlet
 
 ## Связи с wiki
 - [[Устройство HashMap]]
+
+## Испытания
+- [[Испытания Java Maps]]

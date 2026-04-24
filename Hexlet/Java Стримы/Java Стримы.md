@@ -20,3 +20,6 @@ source: Hexlet
 
 ## Связи с wiki
 - [[Stream API]]
+
+## Испытания
+- [[Испытания Java Стримы]]

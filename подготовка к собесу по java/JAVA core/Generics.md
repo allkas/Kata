@@ -181,3 +181,6 @@ class MyException extends Exception implements Comparable<MyException> { ... }
 - [[Устройство HashMap]]
 - [[ArrayList vs LinkedList]]
 - [[Stream API]]
+
+**Hexlet:**
+- [[Java Дженерики]]

@@ -218,3 +218,6 @@ TreeMap<Person, String> map = new TreeMap<>(
 - [[Generics]]
 - [[ArrayList vs LinkedList]]
 - [[Garbage Collector JVM]]
+
+**Hexlet:**
+- [[Java Maps]]

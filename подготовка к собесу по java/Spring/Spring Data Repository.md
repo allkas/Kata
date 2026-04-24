@@ -209,3 +209,7 @@ List<UserSummary> findSummaryByActive(boolean active);
 - [[Транзакции уровни изоляции]]
 - [[Проблема N+1 запросов]]
 - [[Spring Boot]]
+
+**Hexlet:**
+- [[Java Корпоративные приложения на Spring Boot]]
+- [[Java JDBC — Работа с базой данных]]

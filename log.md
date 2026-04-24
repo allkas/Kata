@@ -2,6 +2,30 @@
 
 ---
 
+## [2026-04-24] ingest | Hexlet — Java курсы (17 курсов)
+
+**Источник:** `D:/[SW.BAND] [Хекслет] Подписка на Базовый план (2024)/[SW.BAND] Курсы/` (HTML, SingleFile)
+
+**Создано:** 189 .md файлов в `Hexlet/` — 17 курсов × уроки (только теория, без практических шагов)
+
+**Новые курсы:**
+- `Hexlet/Java Стримы/` — 10 уроков → связан с [[Stream API]]
+- `Hexlet/Java Дженерики/` — 8 уроков → связан с [[Generics]]
+- `Hexlet/Java Maps/` — 4 урока → связан с [[Устройство HashMap]]
+- `Hexlet/Java Основы ООП/`, `Java Введение в ООП/`, `Java Классы/`, `Java Объектно-ориентированный дизайн/` → связаны с [[Основы ООП]]
+- `Hexlet/Java Корпоративные приложения на Spring Boot/` — 28 уроков → связан с [[Spring Boot]], [[Spring Core IoC DI]], [[Spring Data Repository]]
+- `Hexlet/Java JDBC — Работа с базой данных/` — 5 уроков
+- `Hexlet/Java Автоматическое тестирование/` — 12 уроков
+- `Hexlet/Java Веб-технологии/`, `Java Составные данные/`, `Java Функции/`, `Java Массивы/`, `Java Списки/`, `Java Продвинутое использование/`, `Java Настройка окружения/`
+
+**Добавлены `**Hexlet:**` секции** в существующие страницы wiki:
+- `JAVA core/Stream API.md`, `Generics.md`, `Устройство HashMap.md`, `Основы ООП.md`
+- `Spring/Spring Boot.md`, `Spring Core IoC DI.md`, `Spring Data Repository.md`
+
+**Мастер-индекс:** `Hexlet/Hexlet Java курсы.md`
+
+---
+
 ## [2026-04-21] ingest | Паттерны проектирования (2.pdf)
 
 **Источник:** `2.pdf` (GoF Design Patterns, антипаттерны, 60 страниц)

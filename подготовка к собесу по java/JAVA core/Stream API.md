@@ -241,3 +241,6 @@ IntStream.range(0, 5).mapToObj(i -> "item_" + i).collect(toList());
 - [[Generics]]
 - [[ArrayList vs LinkedList]]
 - [[Многопоточность основы]]
+
+**Hexlet:**
+- [[Java Стримы]]

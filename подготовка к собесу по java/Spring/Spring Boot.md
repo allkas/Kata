@@ -155,3 +155,6 @@ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.Sec
 - [[Spring Core IoC DI]]
 - [[Spring MVC REST (Controller vs RestController)]]
 - [[Транзакции уровни изоляции]]
+
+**Hexlet:**
+- [[Java Корпоративные приложения на Spring Boot]]

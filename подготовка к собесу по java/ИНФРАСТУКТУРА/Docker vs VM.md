@@ -130,3 +130,6 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 - [[Kubernetes pod deployment service]]
 - [[Жизненный цикл Maven]]
 - [[Spring Boot]]
+
+**Hexlet:**
+- [[Docker — Основы]]

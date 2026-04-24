@@ -163,3 +163,6 @@ PUT и PATCH оба обновляют ресурс, но по-разному. P
 - [[Разница HTTP методов]]
 - [[Какой статус возвращать при валидации, бизнес конфликте]]
 - [[Spring MVC REST (Controller vs RestController)]]
+
+**Hexlet:**
+- [[HTTP API]]

@@ -215,3 +215,6 @@ CI/CD — автоматизация пути кода от коммита до 
 - [[Dockerfile и слои образа]]
 - [[Kubernetes pod deployment service]]
 - [[Git merge vs rebase]]
+
+**Hexlet:**
+- [[Непрерывная интеграция (CI)]]

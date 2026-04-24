@@ -201,3 +201,6 @@ Multi-stage сборка решает проблему раздутого обр
 - [[Docker vs VM]]
 - [[Kubernetes pod deployment service]]
 - [[Жизненный цикл Maven]]
+
+**Hexlet:**
+- [[Docker — Основы]]

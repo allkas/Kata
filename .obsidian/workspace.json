@@ -30,14 +30,10 @@
                 "id": "d1aa4ac5069f173f",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Hexlet/Java Функции/Лямбда-функции.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Лямбда-функции"
+                  "type": "graph",
+                  "state": {},
+                  "icon": "lucide-git-fork",
+                  "title": "Граф"
                 }
               }
             ],
@@ -86,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: ⠂ Add Hexlet course materials to knowledge base"
+                  "title": "Terminal: Выбрать ✳ Add Hexlet course materials to knowledge base"
                 }
               }
             ]
@@ -248,7 +244,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,44 +260,44 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "d1aa4ac5069f173f",
+  "active": "18307bd3e02f2651",
   "lastOpenFiles": [
+    "Hexlet/Протокол HTTP/Протокол HTTP.md",
+    "Hexlet/Протокол HTTP/HTTP 1.1.md",
+    "Hexlet/Протокол HTTP/О курсе.md",
     "Hexlet/Java Функции/Java Функции.md",
-    "Hexlet/Java Корпоративные приложения на Spring Boot/Испытания/Очередь сообщений.md",
-    "Hexlet/Java Автоматическое тестирование/Самостоятельная работа.md",
+    "Hexlet/Java Функции/Лямбда-функции.md",
     "Hexlet/Java JDBC — Работа с базой данных/Испытания/База автомобилей.md",
-    "подготовка к собесу по java/ИНФРАСТУКТУРА/Dockerfile и слои образа.md",
-    "Hexlet/Java Списки/Испытания/Испытания Java Списки.md",
-    "Hexlet/Java Списки/Испытания/Уникальный список.md",
-    "log.md.tmp.18280.1777049534460",
-    "Hexlet/Java Автоматическое тестирование/Чек-лист хороших инженерных практик.md",
-    "Hexlet/Java Продвинутое использование/Java Продвинутое использование.md",
-    "Hexlet/Java Продвинутое использование/Многопоточность.md",
-    "Hexlet/Java Списки/Испытания/Список диапазонов.md",
-    "Hexlet/Java Списки/Испытания/Обратная польская запись.md",
-    "Hexlet/Java Списки/Испытания/Самая длинная подстрока.md",
-    "Hexlet/Java Списки/Испытания",
-    "Hexlet/Java Массивы/Испытания/Испытания Java Массивы.md",
-    "Hexlet/Java Массивы/Испытания/Морской бой.md",
-    "Hexlet/Java Массивы/Испытания/Улитка.md",
-    "Hexlet/Java Массивы/Испытания/Чанкование.md",
-    "Hexlet/Java Массивы/Испытания/Умножение матриц.md",
-    "Hexlet/Java Массивы/Испытания/Треугольник Паскаля.md",
-    "Hexlet/Java Массивы/Испытания/Вращение матрицы.md",
-    "Hexlet/Java Массивы/Испытания/Зеркалирование матрицы.md",
-    "Hexlet/Java Массивы/Испытания/Вес Хэмминга.md",
-    "Hexlet/Java Массивы/Испытания/Возрастающая последовательность.md",
-    "Hexlet/Java Массивы/Испытания/Длина последнего слова.md",
-    "Hexlet/Java Массивы/Испытания",
-    "Hexlet/Java Функции/Испытания/Испытания Java Функции.md",
-    "Hexlet/Java Функции/Испытания/Мемоизация.md",
-    "Hexlet/Java Функции/Испытания",
-    "Hexlet/Java Дженерики/Испытания",
-    "Hexlet/Java Основы ООП/Испытания",
-    "Hexlet/Java Классы/Испытания",
-    "Hexlet/Java Введение в ООП/Испытания",
-    "Hexlet/Java Maps/Испытания",
-    "Hexlet/Java JDBC — Работа с базой данных/Испытания",
+    "Hexlet/Terraform — Основы/Terraform — Основы.md",
+    "Hexlet/Terraform — Основы/Бекенды для хранения состояния.md",
+    "Hexlet/Terraform — Основы/Модули.md",
+    "Hexlet/Terraform — Основы/Практика Terraform.md",
+    "Hexlet/Terraform — Основы/Зависимости.md",
+    "Hexlet/Terraform — Основы/Источники данных.md",
+    "Hexlet/Terraform — Основы/Секреты.md",
+    "Hexlet/Terraform — Основы/Переменные.md",
+    "Hexlet/Terraform — Основы/Архитектура.md",
+    "Hexlet/Terraform — Основы/Обзор Terraform.md",
+    "Hexlet/Terraform — Основы/Введение.md",
+    "Hexlet/Terraform — Основы",
+    "Hexlet/Жизненный цикл ПО/Жизненный цикл ПО.md",
+    "Hexlet/Жизненный цикл ПО/Поддержка продукта.md",
+    "Hexlet/Жизненный цикл ПО/Проектная организация.md",
+    "Hexlet/Жизненный цикл ПО/Современные методологии_ Agile, Scrum, Kanban.md",
+    "Hexlet/Жизненный цикл ПО/Жизненный цикл ПО и этап тестирования.md",
+    "Hexlet/Жизненный цикл ПО/Введение.md",
+    "Hexlet/Жизненный цикл ПО",
+    "Hexlet/Регулярные выражения/Регулярные выражения.md",
+    "Hexlet/Регулярные выражения/Испытания",
+    "Hexlet/Регулярные выражения/Просмотр вперед и назад _.md",
+    "Hexlet/Регулярные выражения/Модификаторы _.md",
+    "Hexlet/Регулярные выражения",
+    "Hexlet/Администрирование Linux/Испытания",
+    "Hexlet/Администрирование Linux",
+    "Hexlet/Введение в интернет",
+    "Hexlet/Продакшен и Деплой",
+    "Hexlet/Проектирование баз данных/Испытания",
+    "Hexlet/Проектирование баз данных",
     "Без названия.canvas"
   ]
 }

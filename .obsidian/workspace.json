@@ -21,20 +21,6 @@
                   "icon": "lucide-git-fork",
                   "title": "Граф"
                 }
-              },
-              {
-                "id": "0b0d9abc03a6e7c7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Hexlet/Hexlet Java курсы.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Hexlet Java курсы"
-                }
               }
             ],
             "stacked": true
@@ -261,6 +247,14 @@
   },
   "active": "d1aa4ac5069f173f",
   "lastOpenFiles": [
+    "Hexlet/Hexlet — Общее.md",
+    "Hexlet/Hexlet — Общее.md.tmp.18280.1777050805061",
+    "Hexlet/Hexlet — DevOps.md",
+    "Hexlet/Hexlet — Алгоритмы.md",
+    "Hexlet/Hexlet — Базы данных.md",
+    "Hexlet/Hexlet — HTTP и API.md",
+    "Hexlet/Hexlet — JavaScript.md",
+    "Hexlet/Hexlet — Java.md",
     "Hexlet/JS — Функции/Испытания/Фильтр анаграмм.md",
     "Hexlet/JS — Функции/Испытания/Теория вероятности.md",
     "Hexlet/JS — Функции/Испытания/Счётчик одногодок.md",
@@ -280,13 +274,6 @@
     "Hexlet/JS — Функции/Испытания/IP конвертер.md",
     "Hexlet/JS — Функции/Рекурсия.md",
     "Hexlet/JS — Функции/Чистые функции.md",
-    "Hexlet/JS — Функции/Функции высшего порядка.md",
-    "Hexlet/JS — Функции/Фильтрация (filter).md",
-    "Hexlet/JS — Функции/Сигналы.md",
-    "Hexlet/JS — Функции/Разделение команд и запросов.md",
-    "Hexlet/JS — Функции/Отображение (map).md",
-    "Hexlet/JS — Функции/Оператор Rest (упаковка аргументов).md",
-    "Hexlet/JS — Функции/Оператор Spread (распаковка аргументов).md",
     "Hexlet/JS — Функции/Испытания",
     "Hexlet/JS — Функции",
     "Hexlet/JS — Разработка абстракций для асинхронности/Испытания",
@@ -296,7 +283,6 @@
     "Hexlet/JS — Предметно-ориентированное проектирование",
     "Hexlet/JS — Полиморфизм/Испытания",
     "Hexlet/JS — Полиморфизм",
-    "Hexlet/JS — Погружаясь в классы/Испытания",
     "Без названия.canvas"
   ]
 }

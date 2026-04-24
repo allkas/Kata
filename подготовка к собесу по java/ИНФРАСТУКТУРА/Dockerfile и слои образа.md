@@ -1,6 +1,12 @@
 ---
-tags: [docker, dockerfile, containers, infrastructure]
-sources: [DevOps И ИНФРАСТУКТУРА Вопросы технических собеседований.pdf]
+tags:
+  - docker
+  - dockerfile
+  - containers
+  - infrastructure
+sources:
+  - Вопросы технических собеседований (1).pdf
+  - Алгоритмы и паттерны Вопросы технических собеседований.pdf
 ---
 
 # Dockerfile и слои образа

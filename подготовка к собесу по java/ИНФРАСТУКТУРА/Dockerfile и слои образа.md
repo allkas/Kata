@@ -159,7 +159,7 @@ USER app
 
 - [[Docker vs VM]] — Docker-образ vs VM-образ, namespace/cgroups, Union FS
 - [[Kubernetes pod deployment service]] — образ — то, что деплоится в Pod
-- [[ИНФРАСТУКТУРА/Жизненный цикл Maven]] — `mvn package` внутри multi-stage сборки
+- [[Жизненный цикл Maven]] — `mvn package` внутри multi-stage сборки
 
 ## 6. Ответ на собесе (2 минуты)
 

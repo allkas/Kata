@@ -82,7 +82,7 @@
                   },
                   "pinned": true,
                   "icon": "terminal",
-                  "title": "Terminal: cmd"
+                  "title": "Terminal: ✳ Video editing capability inquiry"
                 }
               }
             ]
@@ -260,7 +260,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "0516de59ff87b101",
+  "active": "18307bd3e02f2651",
   "lastOpenFiles": [
     "Hexlet/JS — Массивы/JS — Массивы.md",
     "Hexlet/JS — Массивы/Вложенные массивы.md",

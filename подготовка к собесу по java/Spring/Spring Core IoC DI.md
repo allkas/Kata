@@ -340,6 +340,3 @@ public class DateUtils {
 - [[Spring Boot]]
 - [[Spring AOP]]
 - [[Транзакции уровни изоляции]]
-
-**Hexlet:**
-- [[Java Корпоративные приложения на Spring Boot]]

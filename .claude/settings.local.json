@@ -7,7 +7,8 @@
       "Bash(python3 *)",
       "Bash(pip install *)",
       "Bash(grep -v \"^\\\\\\\\[SW.BAND\\\\\\\\] Java\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] JS\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] PHP\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Python\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] CSS\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Bootstrap\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] HTML\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Ruby\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Jupyter\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Gulp\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] SASS\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] React\\\\|^\\\\\\\\[SW.BAND\\\\\\\\] Go\\\\|Аналит\\\\|Визуал\\\\|Матем\\\\|Статист\\\\|Трудоустройство\\\\|Направления\\\\|Сквозная\\\\|Google\\\\|Superset\\\\|Основы верстки\\\\|Основы линейной\\\\|Основы Ruby\\\\|Vagrant\\\\|Linux_Пользов\")",
-      "Bash(xargs -I{} basename {})"
+      "Bash(xargs -I{} basename {})",
+      "Read(//c/c/Users/all/OneDrive/Desktop/Kata/**)"
     ]
   }
 }
